@@ -92,3 +92,9 @@ db.shoes.insertMany(
 );
 
 // this above query will insert all the documents expect those with errors (so it will not stop after encountering the first document with error, it will skip it and then continue with others)
+
+// case sensitivity in mongoDB
+
+// these both commands look for different collection 
+// db.shoes.find() 
+// db.shoes.find()
