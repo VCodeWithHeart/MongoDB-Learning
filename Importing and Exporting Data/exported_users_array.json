@@ -1,0 +1,3966 @@
+[
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257929" },
+    "userId": "USR0001",
+    "firstName": "Ayaan",
+    "lastName": "Sharma",
+    "fullName": "Ayaan Sharma",
+    "email": "ayaan.sharma001@example.com",
+    "phone": "+91-9163119785",
+    "age": 39,
+    "dateOfBirth": "1987-04-05",
+    "gender": "female",
+    "isEmailVerified": true,
+    "status": "pending_verification",
+    "role": "user",
+    "occupation": "Frontend Developer",
+    "department": "Engineering",
+    "address": {
+      "street": "24 MG Road",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "country": "India",
+      "postalCode": "600041"
+    },
+    "account": {
+      "plan": "premium",
+      "createdAt": "2023-07-18",
+      "lastLoginAt": "2023-09-10",
+      "loginCount": 574,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "system",
+      "newsletterSubscribed": false,
+      "notifications": { "email": true, "sms": false, "push": false }
+    },
+    "skills": ["Node.js", "Communication"],
+    "tags": ["verified", "returning"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125792a" },
+    "userId": "USR0002",
+    "firstName": "Aarohi",
+    "lastName": "Iyer",
+    "fullName": "Aarohi Iyer",
+    "email": "aarohi.iyer002@example.com",
+    "phone": "+91-9639960595",
+    "age": 34,
+    "dateOfBirth": "1992-02-12",
+    "gender": "male",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "admin",
+    "occupation": "Teacher",
+    "department": "Other",
+    "address": {
+      "street": "32 Market Street",
+      "city": "Ahmedabad",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "380017"
+    },
+    "account": {
+      "plan": "premium",
+      "createdAt": "2022-07-09",
+      "lastLoginAt": "2024-02-29",
+      "loginCount": 849,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "dark",
+      "newsletterSubscribed": true,
+      "notifications": { "email": true, "sms": true, "push": true }
+    },
+    "skills": ["React", "MongoDB", "Customer Service", "Communication"],
+    "tags": ["referral", "beta-tester"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125792b" },
+    "userId": "USR0008",
+    "firstName": "Neha",
+    "lastName": "Malhotra",
+    "fullName": "Neha Malhotra",
+    "email": "neha.malhotra008@example.com",
+    "phone": "+91-8806569935",
+    "age": 23,
+    "dateOfBirth": "2003-01-22",
+    "gender": "non_disclosed",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "Business Owner",
+    "department": "Finance",
+    "address": {
+      "street": "205 Station Road",
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "postalCode": "226017"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2024-08-14",
+      "lastLoginAt": "2025-02-24",
+      "loginCount": 549,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "dark",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": false, "push": true }
+    },
+    "skills": ["Excel", "Project Management"],
+    "tags": ["new-user"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125792c" },
+    "userId": "USR0005",
+    "firstName": "Sneha",
+    "lastName": "Verma",
+    "fullName": "Sneha Verma",
+    "email": "sneha.verma005@example.com",
+    "phone": "+91-7079815404",
+    "age": 27,
+    "dateOfBirth": "1999-08-17",
+    "gender": "non_disclosed",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "admin",
+    "occupation": "UI/UX Designer",
+    "department": "Other",
+    "address": {
+      "street": "193 Shanti Nagar",
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "postalCode": "226034"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2024-02-21",
+      "lastLoginAt": "2024-06-14",
+      "loginCount": 300,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "dark",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": true, "push": true }
+    },
+    "skills": ["TypeScript", "Project Management", "CSS", "MongoDB"],
+    "tags": ["beta-tester"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125792d" },
+    "userId": "USR0009",
+    "firstName": "Kunal",
+    "lastName": "Sharma",
+    "fullName": "Kunal Sharma",
+    "email": "kunal.sharma009@example.com",
+    "phone": "+91-8085812759",
+    "age": 39,
+    "dateOfBirth": "1987-03-14",
+    "gender": "male",
+    "isEmailVerified": true,
+    "status": "inactive",
+    "role": "user",
+    "occupation": "Product Manager",
+    "department": "Education",
+    "address": {
+      "street": "1 Market Street",
+      "city": "Ahmedabad",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "380023"
+    },
+    "account": {
+      "plan": "basic",
+      "createdAt": "2026-03-24",
+      "lastLoginAt": "2026-06-05",
+      "loginCount": 433,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "system",
+      "newsletterSubscribed": false,
+      "notifications": { "email": true, "sms": true, "push": false }
+    },
+    "skills": ["JavaScript", "CSS", "Project Management"],
+    "tags": ["beta-tester"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125792e" },
+    "userId": "USR0010",
+    "firstName": "Vihaan",
+    "lastName": "Patel",
+    "fullName": "Vihaan Patel",
+    "email": "vihaan.patel010@example.com",
+    "phone": "+91-6244295904",
+    "age": 30,
+    "dateOfBirth": "1996-09-06",
+    "gender": "non_disclosed",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "Customer Support",
+    "department": "Design",
+    "address": {
+      "street": "173 MG Road",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "country": "India",
+      "postalCode": "560046"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2024-09-03",
+      "lastLoginAt": "2026-04-09",
+      "loginCount": 252,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "light",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": false, "push": false }
+    },
+    "skills": ["TypeScript", "SQL", "MongoDB"],
+    "tags": ["early-access", "returning"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125792f" },
+    "userId": "USR0011",
+    "firstName": "Avni",
+    "lastName": "Chauhan",
+    "fullName": "Avni Chauhan",
+    "email": "avni.chauhan011@example.com",
+    "phone": "+91-8667858669",
+    "age": 44,
+    "dateOfBirth": "1982-01-15",
+    "gender": "non_disclosed",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "moderator",
+    "occupation": "Student",
+    "department": "Other",
+    "address": {
+      "street": "68 Green Park",
+      "city": "Jaipur",
+      "state": "Rajasthan",
+      "country": "India",
+      "postalCode": "302028"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2026-03-20",
+      "lastLoginAt": "2026-05-21",
+      "loginCount": 378,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "dark",
+      "newsletterSubscribed": false,
+      "notifications": { "email": true, "sms": false, "push": true }
+    },
+    "skills": ["Python", "React", "TypeScript"],
+    "tags": ["newsletter", "referral", "early-access"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257930" },
+    "userId": "USR0012",
+    "firstName": "Sneha",
+    "lastName": "Gupta",
+    "fullName": "Sneha Gupta",
+    "email": "sneha.gupta012@example.com",
+    "phone": "+91-9663232650",
+    "age": 39,
+    "dateOfBirth": "1986-11-21",
+    "gender": "male",
+    "isEmailVerified": false,
+    "status": "active",
+    "role": "user",
+    "occupation": "Backend Developer",
+    "department": "Education",
+    "address": {
+      "street": "213 Shanti Nagar",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "country": "India",
+      "postalCode": "600035"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2023-12-04",
+      "lastLoginAt": "2025-10-17",
+      "loginCount": 789,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "dark",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": false, "push": true }
+    },
+    "skills": ["React", "Node.js"],
+    "tags": ["new-user", "early-access", "newsletter"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257931" },
+    "userId": "USR0013",
+    "firstName": "Amit",
+    "lastName": "Jain",
+    "fullName": "Amit Jain",
+    "email": "amit.jain013@example.com",
+    "phone": "+91-7566166314",
+    "age": 42,
+    "dateOfBirth": "1984-01-10",
+    "gender": "female",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "admin",
+    "occupation": "Student",
+    "department": "Design",
+    "address": {
+      "street": "91 Market Street",
+      "city": "Vadodara",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "390026"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2024-05-30",
+      "lastLoginAt": "2025-01-27",
+      "loginCount": 166,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "light",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": false, "push": true }
+    },
+    "skills": ["Node.js", "React", "Communication", "JavaScript"],
+    "tags": ["mobile-user", "returning"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257932" },
+    "userId": "USR0014",
+    "firstName": "Nisha",
+    "lastName": "Nair",
+    "fullName": "Nisha Nair",
+    "email": "nisha.nair014@example.com",
+    "phone": "+91-6101637979",
+    "age": 21,
+    "dateOfBirth": "2005-04-08",
+    "gender": "non_disclosed",
+    "isEmailVerified": true,
+    "status": "inactive",
+    "role": "user",
+    "occupation": "Accountant",
+    "department": "Design",
+    "address": {
+      "street": "248 Shanti Nagar",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalCode": "411012"
+    },
+    "account": {
+      "plan": "premium",
+      "createdAt": "2026-08-08",
+      "lastLoginAt": "2026-09-28",
+      "loginCount": 695,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "light",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": true, "push": false }
+    },
+    "skills": ["React", "CSS"],
+    "tags": ["beta-tester", "referral"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257933" },
+    "userId": "USR0015",
+    "firstName": "Rahul",
+    "lastName": "Malhotra",
+    "fullName": "Rahul Malhotra",
+    "email": "rahul.malhotra015@example.com",
+    "phone": "+91-6816382125",
+    "age": 43,
+    "dateOfBirth": "1983-07-19",
+    "gender": "male",
+    "isEmailVerified": true,
+    "status": "inactive",
+    "role": "user",
+    "occupation": "Data Analyst",
+    "department": "Other",
+    "address": {
+      "street": "176 MG Road",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "country": "India",
+      "postalCode": "560045"
+    },
+    "account": {
+      "plan": "basic",
+      "createdAt": "2024-11-13",
+      "lastLoginAt": "2025-01-23",
+      "loginCount": 680,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "dark",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": false, "push": false }
+    },
+    "skills": ["Communication", "Python", "Project Management", "Node.js"],
+    "tags": ["early-access"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257934" },
+    "userId": "USR0016",
+    "firstName": "Kavya",
+    "lastName": "Shah",
+    "fullName": "Kavya Shah",
+    "email": "kavya.shah016@example.com",
+    "phone": "+91-9580822352",
+    "age": 37,
+    "dateOfBirth": "1989-07-18",
+    "gender": "female",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "Sales Executive",
+    "department": "Finance",
+    "address": {
+      "street": "120 Gandhi Road",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "country": "India",
+      "postalCode": "560048"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2025-03-11",
+      "lastLoginAt": "2026-08-16",
+      "loginCount": 484,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "system",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": false, "push": true }
+    },
+    "skills": ["TypeScript", "Python", "MongoDB"],
+    "tags": ["newsletter"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257935" },
+    "userId": "USR0017",
+    "firstName": "Vivaan",
+    "lastName": "Patel",
+    "fullName": "Vivaan Patel",
+    "email": "vivaan.patel017@example.com",
+    "phone": "+91-7780010572",
+    "age": 27,
+    "dateOfBirth": "1999-02-15",
+    "gender": "non_disclosed",
+    "isEmailVerified": true,
+    "status": "inactive",
+    "role": "user",
+    "occupation": "Sales Executive",
+    "department": "Marketing",
+    "address": {
+      "street": "38 Lake View Road",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalCode": "400100"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2024-08-31",
+      "lastLoginAt": "2025-11-09",
+      "loginCount": 224,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "system",
+      "newsletterSubscribed": false,
+      "notifications": { "email": true, "sms": true, "push": true }
+    },
+    "skills": ["Node.js", "Excel", "Project Management", "CSS", "SQL"],
+    "tags": ["early-access", "referral"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257936" },
+    "userId": "USR0006",
+    "firstName": "Ananya",
+    "lastName": "Jain",
+    "fullName": "Ananya Jain",
+    "email": "ananya.jain006@example.com",
+    "phone": "+91-8098545541",
+    "age": 46,
+    "dateOfBirth": "1980-10-11",
+    "gender": "female",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "Student",
+    "department": "Engineering",
+    "address": {
+      "street": "62 Station Road",
+      "city": "Kolkata",
+      "state": "West Bengal",
+      "country": "India",
+      "postalCode": "700031"
+    },
+    "account": {
+      "plan": "basic",
+      "createdAt": "2024-12-22",
+      "lastLoginAt": "2025-03-02",
+      "loginCount": 778,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "light",
+      "newsletterSubscribed": false,
+      "notifications": { "email": true, "sms": false, "push": false }
+    },
+    "skills": ["Project Management", "MongoDB", "Python"],
+    "tags": ["beta-tester", "mobile-user"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257937" },
+    "userId": "USR0007",
+    "firstName": "Pooja",
+    "lastName": "Chauhan",
+    "fullName": "Pooja Chauhan",
+    "email": "pooja.chauhan007@example.com",
+    "phone": "+91-6090341465",
+    "age": 39,
+    "dateOfBirth": "1987-02-11",
+    "gender": "non_disclosed",
+    "isEmailVerified": true,
+    "status": "pending_verification",
+    "role": "user",
+    "occupation": "Frontend Developer",
+    "department": "Design",
+    "address": {
+      "street": "182 Lake View Road",
+      "city": "Ahmedabad",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "380022"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2023-05-23",
+      "lastLoginAt": "2023-07-26",
+      "loginCount": 338,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "light",
+      "newsletterSubscribed": false,
+      "notifications": { "email": false, "sms": true, "push": true }
+    },
+    "skills": [
+      "MongoDB",
+      "Excel",
+      "Communication",
+      "Customer Service",
+      "React"
+    ],
+    "tags": ["early-access"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257938" },
+    "userId": "USR0003",
+    "firstName": "Rohan",
+    "lastName": "Shah",
+    "fullName": "Rohan Shah",
+    "email": "rohan.shah003@example.com",
+    "phone": "+91-9014295294",
+    "age": 39,
+    "dateOfBirth": "1986-11-09",
+    "gender": "non_disclosed",
+    "isEmailVerified": true,
+    "status": "pending_verification",
+    "role": "admin",
+    "occupation": "Product Manager",
+    "department": "Other",
+    "address": {
+      "street": "187 MG Road",
+      "city": "Jaipur",
+      "state": "Rajasthan",
+      "country": "India",
+      "postalCode": "302022"
+    },
+    "account": {
+      "plan": "basic",
+      "createdAt": "2023-12-29",
+      "lastLoginAt": "2026-02-13",
+      "loginCount": 276,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "system",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": true, "push": true }
+    },
+    "skills": ["SQL", "Communication"],
+    "tags": ["returning", "referral"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257939" },
+    "userId": "USR0004",
+    "firstName": "Riya",
+    "lastName": "Iyer",
+    "fullName": "Riya Iyer",
+    "email": "riya.iyer004@example.com",
+    "phone": "+91-7970753705",
+    "age": 31,
+    "dateOfBirth": "1995-07-21",
+    "gender": "female",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "Business Owner",
+    "department": "Other",
+    "address": {
+      "street": "138 Shanti Nagar",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalCode": "400099"
+    },
+    "account": {
+      "plan": "premium",
+      "createdAt": "2025-09-04",
+      "lastLoginAt": "2026-04-11",
+      "loginCount": 597,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "light",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": true, "push": true }
+    },
+    "skills": ["Node.js", "TypeScript"],
+    "tags": ["early-access"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125793a" },
+    "userId": "USR0019",
+    "firstName": "Nisha",
+    "lastName": "Malhotra",
+    "fullName": "Nisha Malhotra",
+    "email": "nisha.malhotra019@example.com",
+    "phone": "+91-8508601974",
+    "age": 33,
+    "dateOfBirth": "1993-07-25",
+    "gender": "non_disclosed",
+    "isEmailVerified": true,
+    "status": "pending_verification",
+    "role": "user",
+    "occupation": "Teacher",
+    "department": "Engineering",
+    "address": {
+      "street": "242 Riverfront Avenue",
+      "city": "Surat",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "395012"
+    },
+    "account": {
+      "plan": "basic",
+      "createdAt": "2023-02-28",
+      "lastLoginAt": "2025-07-05",
+      "loginCount": 551,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "system",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": true, "push": false }
+    },
+    "skills": ["Excel", "JavaScript", "Communication", "SQL", "CSS"],
+    "tags": ["newsletter", "early-access", "mobile-user"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125793b" },
+    "userId": "USR0018",
+    "firstName": "Simran",
+    "lastName": "Chauhan",
+    "fullName": "Simran Chauhan",
+    "email": "simran.chauhan018@example.com",
+    "phone": "+91-7113219231",
+    "age": 23,
+    "dateOfBirth": "2003-08-15",
+    "gender": "female",
+    "isEmailVerified": true,
+    "status": "pending_verification",
+    "role": "user",
+    "occupation": "Marketing Specialist",
+    "department": "Marketing",
+    "address": {
+      "street": "71 Gandhi Road",
+      "city": "Nagpur",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalCode": "440012"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2022-11-22",
+      "lastLoginAt": "2024-03-16",
+      "loginCount": 278,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "system",
+      "newsletterSubscribed": true,
+      "notifications": { "email": true, "sms": true, "push": true }
+    },
+    "skills": [
+      "Customer Service",
+      "Node.js",
+      "MongoDB",
+      "React",
+      "Communication"
+    ],
+    "tags": ["beta-tester", "verified"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125793c" },
+    "userId": "USR0021",
+    "firstName": "Arjun",
+    "lastName": "Patel",
+    "fullName": "Arjun Patel",
+    "email": "arjun.patel021@example.com",
+    "phone": "+91-6087531510",
+    "age": 39,
+    "dateOfBirth": "1987-04-27",
+    "gender": "non_disclosed",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "Teacher",
+    "department": "Design",
+    "address": {
+      "street": "145 MG Road",
+      "city": "Kolkata",
+      "state": "West Bengal",
+      "country": "India",
+      "postalCode": "700043"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2022-03-05",
+      "lastLoginAt": "2026-06-22",
+      "loginCount": 377,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "system",
+      "newsletterSubscribed": true,
+      "notifications": { "email": true, "sms": false, "push": true }
+    },
+    "skills": ["Python", "CSS"],
+    "tags": ["early-access", "mobile-user", "beta-tester"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125793d" },
+    "userId": "USR0022",
+    "firstName": "Aadhya",
+    "lastName": "Verma",
+    "fullName": "Aadhya Verma",
+    "email": "aadhya.verma022@example.com",
+    "phone": "+91-8994421136",
+    "age": 26,
+    "dateOfBirth": "2000-04-04",
+    "gender": "male",
+    "isEmailVerified": true,
+    "status": "pending_verification",
+    "role": "user",
+    "occupation": "Graphic Designer",
+    "department": "Other",
+    "address": {
+      "street": "110 Riverfront Avenue",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "country": "India",
+      "postalCode": "560036"
+    },
+    "account": {
+      "plan": "premium",
+      "createdAt": "2025-11-15",
+      "lastLoginAt": "2026-10-12",
+      "loginCount": 349,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "dark",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": false, "push": false }
+    },
+    "skills": ["Communication", "Node.js", "Project Management"],
+    "tags": ["verified", "referral", "early-access"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125793e" },
+    "userId": "USR0020",
+    "firstName": "Krishna",
+    "lastName": "Das",
+    "fullName": "Krishna Das",
+    "email": "krishna.das020@example.com",
+    "phone": "+91-8847562279",
+    "age": 34,
+    "dateOfBirth": "1992-10-19",
+    "gender": "female",
+    "isEmailVerified": true,
+    "status": "inactive",
+    "role": "user",
+    "occupation": "QA Engineer",
+    "department": "Healthcare",
+    "address": {
+      "street": "47 Lake View Road",
+      "city": "Delhi",
+      "state": "Delhi",
+      "country": "India",
+      "postalCode": "110032"
+    },
+    "account": {
+      "plan": "basic",
+      "createdAt": "2022-02-25",
+      "lastLoginAt": "2023-12-27",
+      "loginCount": 216,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "dark",
+      "newsletterSubscribed": false,
+      "notifications": { "email": false, "sms": false, "push": false }
+    },
+    "skills": ["Excel", "JavaScript"],
+    "tags": ["new-user", "newsletter", "returning"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125793f" },
+    "userId": "USR0023",
+    "firstName": "Kabir",
+    "lastName": "Chauhan",
+    "fullName": "Kabir Chauhan",
+    "email": "kabir.chauhan023@example.com",
+    "phone": "+91-7384287616",
+    "age": 23,
+    "dateOfBirth": "2003-10-09",
+    "gender": "female",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "Student",
+    "department": "Healthcare",
+    "address": {
+      "street": "146 Market Street",
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "postalCode": "226020"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2026-08-19",
+      "lastLoginAt": "2026-10-21",
+      "loginCount": 332,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "light",
+      "newsletterSubscribed": false,
+      "notifications": { "email": false, "sms": false, "push": false }
+    },
+    "skills": [
+      "Project Management",
+      "JavaScript",
+      "Customer Service",
+      "MongoDB"
+    ],
+    "tags": ["mobile-user"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257940" },
+    "userId": "USR0024",
+    "firstName": "Manav",
+    "lastName": "Mishra",
+    "fullName": "Manav Mishra",
+    "email": "manav.mishra024@example.com",
+    "phone": "+91-8774131811",
+    "age": 38,
+    "dateOfBirth": "1987-12-16",
+    "gender": "non_disclosed",
+    "isEmailVerified": false,
+    "status": "inactive",
+    "role": "user",
+    "occupation": "Backend Developer",
+    "department": "Operations",
+    "address": {
+      "street": "57 Market Street",
+      "city": "Delhi",
+      "state": "Delhi",
+      "country": "India",
+      "postalCode": "110046"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2026-04-02",
+      "lastLoginAt": "2026-06-19",
+      "loginCount": 679,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "dark",
+      "newsletterSubscribed": false,
+      "notifications": { "email": false, "sms": false, "push": false }
+    },
+    "skills": ["Python", "Customer Service", "TypeScript", "MongoDB", "React"],
+    "tags": ["mobile-user", "newsletter", "new-user"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257941" },
+    "userId": "USR0025",
+    "firstName": "Kunal",
+    "lastName": "Shah",
+    "fullName": "Kunal Shah",
+    "email": "kunal.shah025@example.com",
+    "phone": "+91-9112068867",
+    "age": 23,
+    "dateOfBirth": "2003-08-09",
+    "gender": "non_disclosed",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "Accountant",
+    "department": "Marketing",
+    "address": {
+      "street": "93 Green Park",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalCode": "400085"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2023-03-20",
+      "lastLoginAt": "2026-03-17",
+      "loginCount": 129,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "light",
+      "newsletterSubscribed": false,
+      "notifications": { "email": true, "sms": false, "push": true }
+    },
+    "skills": ["CSS", "Python"],
+    "tags": ["referral", "mobile-user"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257942" },
+    "userId": "USR0027",
+    "firstName": "Aarohi",
+    "lastName": "Desai",
+    "fullName": "Aarohi Desai",
+    "email": "aarohi.desai027@example.com",
+    "phone": "+91-8370788647",
+    "age": 41,
+    "dateOfBirth": "1985-04-06",
+    "gender": "female",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "Teacher",
+    "department": "Healthcare",
+    "address": {
+      "street": "75 Lake View Road",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "postalCode": "500088"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2022-06-16",
+      "lastLoginAt": "2026-06-02",
+      "loginCount": 289,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "light",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": true, "push": false }
+    },
+    "skills": ["Project Management", "MongoDB"],
+    "tags": ["newsletter", "referral", "returning"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257943" },
+    "userId": "USR0028",
+    "firstName": "Arjun",
+    "lastName": "Patel",
+    "fullName": "Arjun Patel",
+    "email": "arjun.patel028@example.com",
+    "phone": "+91-9540085129",
+    "age": 37,
+    "dateOfBirth": "1989-10-24",
+    "gender": "non_disclosed",
+    "isEmailVerified": true,
+    "status": "inactive",
+    "role": "user",
+    "occupation": "Teacher",
+    "department": "Operations",
+    "address": {
+      "street": "180 Market Street",
+      "city": "Vadodara",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "390015"
+    },
+    "account": {
+      "plan": "premium",
+      "createdAt": "2026-06-12",
+      "lastLoginAt": "2026-10-16",
+      "loginCount": 448,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "light",
+      "newsletterSubscribed": false,
+      "notifications": { "email": false, "sms": false, "push": true }
+    },
+    "skills": ["MongoDB", "TypeScript"],
+    "tags": ["new-user", "early-access", "beta-tester"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257944" },
+    "userId": "USR0029",
+    "firstName": "Kiara",
+    "lastName": "Kapoor",
+    "fullName": "Kiara Kapoor",
+    "email": "kiara.kapoor029@example.com",
+    "phone": "+91-8228932714",
+    "age": 22,
+    "dateOfBirth": "2004-03-16",
+    "gender": "non_disclosed",
+    "isEmailVerified": false,
+    "status": "active",
+    "role": "user",
+    "occupation": "Customer Support",
+    "department": "Education",
+    "address": {
+      "street": "163 Gandhi Road",
+      "city": "Surat",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "395005"
+    },
+    "account": {
+      "plan": "basic",
+      "createdAt": "2026-04-12",
+      "lastLoginAt": "2026-07-10",
+      "loginCount": 418,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "system",
+      "newsletterSubscribed": true,
+      "notifications": { "email": true, "sms": false, "push": false }
+    },
+    "skills": [
+      "Python",
+      "TypeScript",
+      "Communication",
+      "Project Management",
+      "JavaScript"
+    ],
+    "tags": ["returning", "newsletter"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257945" },
+    "userId": "USR0030",
+    "firstName": "Ira",
+    "lastName": "Iyer",
+    "fullName": "Ira Iyer",
+    "email": "ira.iyer030@example.com",
+    "phone": "+91-6004943787",
+    "age": 34,
+    "dateOfBirth": "1992-09-27",
+    "gender": "non_disclosed",
+    "isEmailVerified": false,
+    "status": "inactive",
+    "role": "user",
+    "occupation": "Student",
+    "department": "Other",
+    "address": {
+      "street": "93 Gandhi Road",
+      "city": "Ahmedabad",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "380035"
+    },
+    "account": {
+      "plan": "basic",
+      "createdAt": "2026-05-02",
+      "lastLoginAt": "2026-05-15",
+      "loginCount": 208,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "light",
+      "newsletterSubscribed": false,
+      "notifications": { "email": false, "sms": false, "push": true }
+    },
+    "skills": ["TypeScript", "CSS"],
+    "tags": ["newsletter"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257946" },
+    "userId": "USR0026",
+    "firstName": "Priya",
+    "lastName": "Shah",
+    "fullName": "Priya Shah",
+    "email": "priya.shah026@example.com",
+    "phone": "+91-6280647907",
+    "age": 31,
+    "dateOfBirth": "1995-02-27",
+    "gender": "male",
+    "isEmailVerified": false,
+    "status": "active",
+    "role": "moderator",
+    "occupation": "Marketing Specialist",
+    "department": "Engineering",
+    "address": {
+      "street": "39 Green Park",
+      "city": "Surat",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "395028"
+    },
+    "account": {
+      "plan": "premium",
+      "createdAt": "2023-06-02",
+      "lastLoginAt": "2025-02-13",
+      "loginCount": 87,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "system",
+      "newsletterSubscribed": false,
+      "notifications": { "email": true, "sms": false, "push": false }
+    },
+    "skills": [
+      "Python",
+      "CSS",
+      "Communication",
+      "Customer Service",
+      "JavaScript"
+    ],
+    "tags": ["returning", "early-access", "referral"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257947" },
+    "userId": "USR0034",
+    "firstName": "Sai",
+    "lastName": "Malhotra",
+    "fullName": "Sai Malhotra",
+    "email": "sai.malhotra034@example.com",
+    "phone": "+91-6431675310",
+    "age": 25,
+    "dateOfBirth": "2000-12-28",
+    "gender": "male",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "Frontend Developer",
+    "department": "Finance",
+    "address": {
+      "street": "204 Lake View Road",
+      "city": "Ahmedabad",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "380024"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2026-04-07",
+      "lastLoginAt": "2026-07-11",
+      "loginCount": 441,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "system",
+      "newsletterSubscribed": false,
+      "notifications": { "email": true, "sms": true, "push": true }
+    },
+    "skills": ["CSS", "Communication"],
+    "tags": ["mobile-user", "referral", "verified"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257948" },
+    "userId": "USR0031",
+    "firstName": "Avni",
+    "lastName": "Jain",
+    "fullName": "Avni Jain",
+    "email": "avni.jain031@example.com",
+    "phone": "+91-9613809882",
+    "age": 33,
+    "dateOfBirth": "1993-02-08",
+    "gender": "female",
+    "isEmailVerified": false,
+    "status": "active",
+    "role": "admin",
+    "occupation": "QA Engineer",
+    "department": "Sales",
+    "address": {
+      "street": "128 Shanti Nagar",
+      "city": "Surat",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "395019"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2025-02-05",
+      "lastLoginAt": "2026-04-06",
+      "loginCount": 494,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "dark",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": true, "push": true }
+    },
+    "skills": ["Python", "Communication"],
+    "tags": ["verified", "early-access"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257949" },
+    "userId": "USR0033",
+    "firstName": "Yash",
+    "lastName": "Kapoor",
+    "fullName": "Yash Kapoor",
+    "email": "yash.kapoor033@example.com",
+    "phone": "+91-9910317247",
+    "age": 32,
+    "dateOfBirth": "1994-02-17",
+    "gender": "male",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "QA Engineer",
+    "department": "Sales",
+    "address": {
+      "street": "20 Gandhi Road",
+      "city": "Jaipur",
+      "state": "Rajasthan",
+      "country": "India",
+      "postalCode": "302042"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2022-07-25",
+      "lastLoginAt": "2024-06-17",
+      "loginCount": 638,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "system",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": false, "push": false }
+    },
+    "skills": ["Project Management", "JavaScript", "CSS", "React", "MongoDB"],
+    "tags": ["verified", "returning", "beta-tester"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125794a" },
+    "userId": "USR0035",
+    "firstName": "Ishaan",
+    "lastName": "Joshi",
+    "fullName": "Ishaan Joshi",
+    "email": "ishaan.joshi035@example.com",
+    "phone": "+91-8864059081",
+    "age": 38,
+    "dateOfBirth": "1988-08-09",
+    "gender": "female",
+    "isEmailVerified": false,
+    "status": "active",
+    "role": "admin",
+    "occupation": "Data Analyst",
+    "department": "Sales",
+    "address": {
+      "street": "19 Gandhi Road",
+      "city": "Noida",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "postalCode": "201312"
+    },
+    "account": {
+      "plan": "premium",
+      "createdAt": "2025-07-30",
+      "lastLoginAt": "2025-12-30",
+      "loginCount": 654,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "dark",
+      "newsletterSubscribed": false,
+      "notifications": { "email": false, "sms": true, "push": false }
+    },
+    "skills": ["React", "MongoDB", "Communication", "SQL", "Python"],
+    "tags": ["verified", "new-user", "beta-tester"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125794b" },
+    "userId": "USR0032",
+    "firstName": "Aarav",
+    "lastName": "Reddy",
+    "fullName": "Aarav Reddy",
+    "email": "aarav.reddy032@example.com",
+    "phone": "+91-8102989254",
+    "age": 28,
+    "dateOfBirth": "1998-10-22",
+    "gender": "female",
+    "isEmailVerified": false,
+    "status": "pending_verification",
+    "role": "user",
+    "occupation": "Graphic Designer",
+    "department": "Finance",
+    "address": {
+      "street": "142 Market Street",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "country": "India",
+      "postalCode": "600048"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2023-09-04",
+      "lastLoginAt": "2024-09-24",
+      "loginCount": 714,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "dark",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": true, "push": false }
+    },
+    "skills": [
+      "Customer Service",
+      "Communication",
+      "TypeScript",
+      "Node.js",
+      "Excel"
+    ],
+    "tags": ["newsletter"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125794c" },
+    "userId": "USR0036",
+    "firstName": "Ishita",
+    "lastName": "Desai",
+    "fullName": "Ishita Desai",
+    "email": "ishita.desai036@example.com",
+    "phone": "+91-9911070030",
+    "age": 24,
+    "dateOfBirth": "2001-12-02",
+    "gender": "non_disclosed",
+    "isEmailVerified": false,
+    "status": "active",
+    "role": "user",
+    "occupation": "Customer Support",
+    "department": "Finance",
+    "address": {
+      "street": "57 MG Road",
+      "city": "Surat",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "395022"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2025-03-05",
+      "lastLoginAt": "2025-07-23",
+      "loginCount": 643,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "system",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": false, "push": true }
+    },
+    "skills": ["Customer Service", "Node.js", "React", "Python"],
+    "tags": ["early-access", "returning"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125794d" },
+    "userId": "USR0037",
+    "firstName": "Aadhya",
+    "lastName": "Mehta",
+    "fullName": "Aadhya Mehta",
+    "email": "aadhya.mehta037@example.com",
+    "phone": "+91-9923396682",
+    "age": 35,
+    "dateOfBirth": "1991-09-17",
+    "gender": "male",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "HR Executive",
+    "department": "Operations",
+    "address": {
+      "street": "192 Riverfront Avenue",
+      "city": "Kolkata",
+      "state": "West Bengal",
+      "country": "India",
+      "postalCode": "700054"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2025-01-09",
+      "lastLoginAt": "2026-05-03",
+      "loginCount": 77,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "system",
+      "newsletterSubscribed": false,
+      "notifications": { "email": false, "sms": true, "push": false }
+    },
+    "skills": ["Python", "Project Management"],
+    "tags": ["referral"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125794e" },
+    "userId": "USR0038",
+    "firstName": "Rohan",
+    "lastName": "Desai",
+    "fullName": "Rohan Desai",
+    "email": "rohan.desai038@example.com",
+    "phone": "+91-8898400928",
+    "age": 26,
+    "dateOfBirth": "2000-06-04",
+    "gender": "female",
+    "isEmailVerified": false,
+    "status": "active",
+    "role": "moderator",
+    "occupation": "UI/UX Designer",
+    "department": "Other",
+    "address": {
+      "street": "84 MG Road",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "country": "India",
+      "postalCode": "560054"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2024-02-20",
+      "lastLoginAt": "2025-12-01",
+      "loginCount": 843,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "dark",
+      "newsletterSubscribed": false,
+      "notifications": { "email": true, "sms": true, "push": true }
+    },
+    "skills": ["Python", "Excel"],
+    "tags": ["returning"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125794f" },
+    "userId": "USR0039",
+    "firstName": "Myra",
+    "lastName": "Jain",
+    "fullName": "Myra Jain",
+    "email": "myra.jain039@example.com",
+    "phone": "+91-9191762519",
+    "age": 32,
+    "dateOfBirth": "1994-06-22",
+    "gender": "non_disclosed",
+    "isEmailVerified": false,
+    "status": "pending_verification",
+    "role": "admin",
+    "occupation": "Business Owner",
+    "department": "Sales",
+    "address": {
+      "street": "227 Market Street",
+      "city": "Vadodara",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "390027"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2024-03-06",
+      "lastLoginAt": "2026-07-07",
+      "loginCount": 501,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "dark",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": true, "push": false }
+    },
+    "skills": ["MongoDB", "SQL", "React", "TypeScript", "Project Management"],
+    "tags": ["early-access"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257950" },
+    "userId": "USR0041",
+    "firstName": "Krishna",
+    "lastName": "Sharma",
+    "fullName": "Krishna Sharma",
+    "email": "krishna.sharma041@example.com",
+    "phone": "+91-7390587865",
+    "age": 21,
+    "dateOfBirth": "2005-04-19",
+    "gender": "female",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "Product Manager",
+    "department": "Education",
+    "address": {
+      "street": "135 Station Road",
+      "city": "Jaipur",
+      "state": "Rajasthan",
+      "country": "India",
+      "postalCode": "302040"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2026-06-06",
+      "lastLoginAt": "2026-10-05",
+      "loginCount": 459,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "system",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": true, "push": true }
+    },
+    "skills": ["Excel", "TypeScript", "JavaScript", "CSS"],
+    "tags": ["early-access", "mobile-user"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257951" },
+    "userId": "USR0044",
+    "firstName": "Ishaan",
+    "lastName": "Mishra",
+    "fullName": "Ishaan Mishra",
+    "email": "ishaan.mishra044@example.com",
+    "phone": "+91-6493428666",
+    "age": 35,
+    "dateOfBirth": "1991-09-12",
+    "gender": "male",
+    "isEmailVerified": true,
+    "status": "inactive",
+    "role": "moderator",
+    "occupation": "HR Executive",
+    "department": "Other",
+    "address": {
+      "street": "7 Shanti Nagar",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalCode": "400076"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2022-08-10",
+      "lastLoginAt": "2024-02-20",
+      "loginCount": 719,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "dark",
+      "newsletterSubscribed": true,
+      "notifications": { "email": true, "sms": true, "push": false }
+    },
+    "skills": ["Node.js", "TypeScript"],
+    "tags": ["returning"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257952" },
+    "userId": "USR0042",
+    "firstName": "Reyansh",
+    "lastName": "Mishra",
+    "fullName": "Reyansh Mishra",
+    "email": "reyansh.mishra042@example.com",
+    "phone": "+91-8612617557",
+    "age": 44,
+    "dateOfBirth": "1982-02-11",
+    "gender": "female",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "Customer Support",
+    "department": "Other",
+    "address": {
+      "street": "183 Riverfront Avenue",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "country": "India",
+      "postalCode": "600046"
+    },
+    "account": {
+      "plan": "premium",
+      "createdAt": "2024-06-27",
+      "lastLoginAt": "2025-12-22",
+      "loginCount": 301,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "system",
+      "newsletterSubscribed": false,
+      "notifications": { "email": true, "sms": true, "push": true }
+    },
+    "skills": ["Excel", "MongoDB", "Communication", "SQL", "Customer Service"],
+    "tags": ["early-access", "beta-tester"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257953" },
+    "userId": "USR0048",
+    "firstName": "Ananya",
+    "lastName": "Verma",
+    "fullName": "Ananya Verma",
+    "email": "ananya.verma048@example.com",
+    "phone": "+91-6832810061",
+    "age": 43,
+    "dateOfBirth": "1983-09-17",
+    "gender": "male",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "Backend Developer",
+    "department": "Sales",
+    "address": {
+      "street": "66 MG Road",
+      "city": "Delhi",
+      "state": "Delhi",
+      "country": "India",
+      "postalCode": "110029"
+    },
+    "account": {
+      "plan": "premium",
+      "createdAt": "2025-07-20",
+      "lastLoginAt": "2025-10-06",
+      "loginCount": 778,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "light",
+      "newsletterSubscribed": false,
+      "notifications": { "email": false, "sms": false, "push": false }
+    },
+    "skills": ["Node.js", "Excel", "React", "TypeScript"],
+    "tags": ["verified", "early-access"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257954" },
+    "userId": "USR0047",
+    "firstName": "Aditya",
+    "lastName": "Malhotra",
+    "fullName": "Aditya Malhotra",
+    "email": "aditya.malhotra047@example.com",
+    "phone": "+91-7843761970",
+    "age": 44,
+    "dateOfBirth": "1982-06-19",
+    "gender": "non_disclosed",
+    "isEmailVerified": false,
+    "status": "inactive",
+    "role": "user",
+    "occupation": "Backend Developer",
+    "department": "Education",
+    "address": {
+      "street": "6 Riverfront Avenue",
+      "city": "Surat",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "395008"
+    },
+    "account": {
+      "plan": "premium",
+      "createdAt": "2024-07-30",
+      "lastLoginAt": "2025-11-13",
+      "loginCount": 706,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "dark",
+      "newsletterSubscribed": true,
+      "notifications": { "email": true, "sms": false, "push": false }
+    },
+    "skills": ["Communication", "Python"],
+    "tags": ["beta-tester", "returning", "newsletter"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257955" },
+    "userId": "USR0049",
+    "firstName": "Kiara",
+    "lastName": "Kapoor",
+    "fullName": "Kiara Kapoor",
+    "email": "kiara.kapoor049@example.com",
+    "phone": "+91-7983168873",
+    "age": 30,
+    "dateOfBirth": "1996-02-10",
+    "gender": "male",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "QA Engineer",
+    "department": "Operations",
+    "address": {
+      "street": "20 Station Road",
+      "city": "Surat",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "395022"
+    },
+    "account": {
+      "plan": "premium",
+      "createdAt": "2023-12-22",
+      "lastLoginAt": "2026-02-16",
+      "loginCount": 473,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "system",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": true, "push": false }
+    },
+    "skills": ["Project Management", "Node.js", "JavaScript", "Excel", "React"],
+    "tags": ["returning", "verified"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257956" },
+    "userId": "USR0050",
+    "firstName": "Diya",
+    "lastName": "Patel",
+    "fullName": "Diya Patel",
+    "email": "diya.patel050@example.com",
+    "phone": "+91-8245185702",
+    "age": 32,
+    "dateOfBirth": "1994-08-17",
+    "gender": "non_disclosed",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "UI/UX Designer",
+    "department": "Operations",
+    "address": {
+      "street": "100 Market Street",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalCode": "400100"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2025-12-20",
+      "lastLoginAt": "2026-10-22",
+      "loginCount": 53,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "dark",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": true, "push": false }
+    },
+    "skills": ["Python", "TypeScript", "CSS", "Node.js"],
+    "tags": ["returning", "verified"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257957" },
+    "userId": "USR0051",
+    "firstName": "Ishaan",
+    "lastName": "Nair",
+    "fullName": "Ishaan Nair",
+    "email": "ishaan.nair051@example.com",
+    "phone": "+91-6553843145",
+    "age": 23,
+    "dateOfBirth": "2002-11-13",
+    "gender": "non_disclosed",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "moderator",
+    "occupation": "Sales Executive",
+    "department": "Finance",
+    "address": {
+      "street": "209 Green Park",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalCode": "411022"
+    },
+    "account": {
+      "plan": "premium",
+      "createdAt": "2025-09-05",
+      "lastLoginAt": "2025-10-22",
+      "loginCount": 661,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "system",
+      "newsletterSubscribed": false,
+      "notifications": { "email": true, "sms": false, "push": false }
+    },
+    "skills": ["MongoDB", "SQL", "Excel"],
+    "tags": ["mobile-user"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257958" },
+    "userId": "USR0052",
+    "firstName": "Krishna",
+    "lastName": "Mehta",
+    "fullName": "Krishna Mehta",
+    "email": "krishna.mehta052@example.com",
+    "phone": "+91-9310881714",
+    "age": 21,
+    "dateOfBirth": "2005-02-17",
+    "gender": "non_disclosed",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "moderator",
+    "occupation": "Product Manager",
+    "department": "Education",
+    "address": {
+      "street": "40 Green Park",
+      "city": "Ahmedabad",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "380020"
+    },
+    "account": {
+      "plan": "premium",
+      "createdAt": "2023-08-29",
+      "lastLoginAt": "2024-08-02",
+      "loginCount": 738,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "dark",
+      "newsletterSubscribed": false,
+      "notifications": { "email": true, "sms": false, "push": false }
+    },
+    "skills": [
+      "MongoDB",
+      "Project Management",
+      "Customer Service",
+      "Python",
+      "Excel"
+    ],
+    "tags": ["beta-tester"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257959" },
+    "userId": "USR0055",
+    "firstName": "Simran",
+    "lastName": "Das",
+    "fullName": "Simran Das",
+    "email": "simran.das055@example.com",
+    "phone": "+91-7293434554",
+    "age": 43,
+    "dateOfBirth": "1983-05-08",
+    "gender": "female",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "Marketing Specialist",
+    "department": "Healthcare",
+    "address": {
+      "street": "17 Station Road",
+      "city": "Delhi",
+      "state": "Delhi",
+      "country": "India",
+      "postalCode": "110039"
+    },
+    "account": {
+      "plan": "premium",
+      "createdAt": "2024-05-16",
+      "lastLoginAt": "2025-11-15",
+      "loginCount": 16,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "system",
+      "newsletterSubscribed": true,
+      "notifications": { "email": true, "sms": false, "push": false }
+    },
+    "skills": ["CSS", "SQL"],
+    "tags": ["early-access"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125795a" },
+    "userId": "USR0054",
+    "firstName": "Manav",
+    "lastName": "Patel",
+    "fullName": "Manav Patel",
+    "email": "manav.patel054@example.com",
+    "phone": "+91-6350492684",
+    "age": 35,
+    "dateOfBirth": "1991-04-13",
+    "gender": "male",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "UI/UX Designer",
+    "department": "Design",
+    "address": {
+      "street": "215 Riverfront Avenue",
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "postalCode": "226035"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2024-10-25",
+      "lastLoginAt": "2025-03-14",
+      "loginCount": 39,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "system",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": false, "push": true }
+    },
+    "skills": ["JavaScript", "Python"],
+    "tags": ["newsletter"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125795b" },
+    "userId": "USR0057",
+    "firstName": "Krishna",
+    "lastName": "Verma",
+    "fullName": "Krishna Verma",
+    "email": "krishna.verma057@example.com",
+    "phone": "+91-6865826728",
+    "age": 32,
+    "dateOfBirth": "1994-01-10",
+    "gender": "female",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "UI/UX Designer",
+    "department": "Operations",
+    "address": {
+      "street": "132 Market Street",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "country": "India",
+      "postalCode": "600051"
+    },
+    "account": {
+      "plan": "basic",
+      "createdAt": "2026-05-09",
+      "lastLoginAt": "2026-07-12",
+      "loginCount": 37,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "dark",
+      "newsletterSubscribed": false,
+      "notifications": { "email": true, "sms": false, "push": false }
+    },
+    "skills": ["SQL", "Communication"],
+    "tags": ["referral", "mobile-user"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125795c" },
+    "userId": "USR0046",
+    "firstName": "Amit",
+    "lastName": "Mishra",
+    "fullName": "Amit Mishra",
+    "email": "amit.mishra046@example.com",
+    "phone": "+91-7697643337",
+    "age": 37,
+    "dateOfBirth": "1989-01-08",
+    "gender": "non_disclosed",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "Accountant",
+    "department": "Marketing",
+    "address": {
+      "street": "197 Green Park",
+      "city": "Delhi",
+      "state": "Delhi",
+      "country": "India",
+      "postalCode": "110048"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2025-09-28",
+      "lastLoginAt": "2026-02-23",
+      "loginCount": 335,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "dark",
+      "newsletterSubscribed": false,
+      "notifications": { "email": true, "sms": true, "push": false }
+    },
+    "skills": ["Project Management", "Customer Service", "SQL"],
+    "tags": ["early-access"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125795d" },
+    "userId": "USR0056",
+    "firstName": "Diya",
+    "lastName": "Verma",
+    "fullName": "Diya Verma",
+    "email": "diya.verma056@example.com",
+    "phone": "+91-8178955870",
+    "age": 44,
+    "dateOfBirth": "1982-09-18",
+    "gender": "non_disclosed",
+    "isEmailVerified": true,
+    "status": "inactive",
+    "role": "user",
+    "occupation": "Frontend Developer",
+    "department": "Education",
+    "address": {
+      "street": "96 Shanti Nagar",
+      "city": "Delhi",
+      "state": "Delhi",
+      "country": "India",
+      "postalCode": "110047"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2024-01-09",
+      "lastLoginAt": "2025-01-08",
+      "loginCount": 807,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "light",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": true, "push": true }
+    },
+    "skills": ["Project Management", "SQL", "Node.js", "Excel"],
+    "tags": ["referral", "beta-tester", "returning"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125795e" },
+    "userId": "USR0058",
+    "firstName": "Priya",
+    "lastName": "Shah",
+    "fullName": "Priya Shah",
+    "email": "priya.shah058@example.com",
+    "phone": "+91-8230272804",
+    "age": 31,
+    "dateOfBirth": "1995-06-26",
+    "gender": "male",
+    "isEmailVerified": true,
+    "status": "inactive",
+    "role": "user",
+    "occupation": "Sales Executive",
+    "department": "Sales",
+    "address": {
+      "street": "140 Shanti Nagar",
+      "city": "Noida",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "postalCode": "201311"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2025-11-18",
+      "lastLoginAt": "2025-12-28",
+      "loginCount": 335,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "dark",
+      "newsletterSubscribed": false,
+      "notifications": { "email": false, "sms": true, "push": false }
+    },
+    "skills": ["Excel", "JavaScript", "SQL", "Communication"],
+    "tags": ["new-user", "referral"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125795f" },
+    "userId": "USR0053",
+    "firstName": "Riya",
+    "lastName": "Chauhan",
+    "fullName": "Riya Chauhan",
+    "email": "riya.chauhan053@example.com",
+    "phone": "+91-8265422548",
+    "age": 37,
+    "dateOfBirth": "1989-07-17",
+    "gender": "male",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "moderator",
+    "occupation": "Product Manager",
+    "department": "Operations",
+    "address": {
+      "street": "14 Gandhi Road",
+      "city": "Noida",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "postalCode": "201312"
+    },
+    "account": {
+      "plan": "premium",
+      "createdAt": "2026-04-25",
+      "lastLoginAt": "2026-05-21",
+      "loginCount": 728,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "dark",
+      "newsletterSubscribed": true,
+      "notifications": { "email": true, "sms": false, "push": false }
+    },
+    "skills": ["Communication", "React", "MongoDB"],
+    "tags": ["beta-tester", "new-user"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257960" },
+    "userId": "USR0059",
+    "firstName": "Ishita",
+    "lastName": "Nair",
+    "fullName": "Ishita Nair",
+    "email": "ishita.nair059@example.com",
+    "phone": "+91-6133747952",
+    "age": 22,
+    "dateOfBirth": "2003-11-06",
+    "gender": "female",
+    "isEmailVerified": false,
+    "status": "active",
+    "role": "user",
+    "occupation": "Backend Developer",
+    "department": "Marketing",
+    "address": {
+      "street": "200 Riverfront Avenue",
+      "city": "Delhi",
+      "state": "Delhi",
+      "country": "India",
+      "postalCode": "110035"
+    },
+    "account": {
+      "plan": "basic",
+      "createdAt": "2026-06-29",
+      "lastLoginAt": "2026-09-09",
+      "loginCount": 33,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "system",
+      "newsletterSubscribed": false,
+      "notifications": { "email": false, "sms": false, "push": false }
+    },
+    "skills": ["CSS", "Node.js"],
+    "tags": ["beta-tester", "mobile-user", "newsletter"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257961" },
+    "userId": "USR0060",
+    "firstName": "Kiara",
+    "lastName": "Joshi",
+    "fullName": "Kiara Joshi",
+    "email": "kiara.joshi060@example.com",
+    "phone": "+91-8223699008",
+    "age": 23,
+    "dateOfBirth": "2003-03-16",
+    "gender": "male",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "Business Owner",
+    "department": "Healthcare",
+    "address": {
+      "street": "55 Shanti Nagar",
+      "city": "Ahmedabad",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "380037"
+    },
+    "account": {
+      "plan": "basic",
+      "createdAt": "2022-02-23",
+      "lastLoginAt": "2023-04-08",
+      "loginCount": 125,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "dark",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": true, "push": false }
+    },
+    "skills": ["Customer Service", "React", "Project Management", "CSS"],
+    "tags": ["verified", "early-access"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257962" },
+    "userId": "USR0061",
+    "firstName": "Ananya",
+    "lastName": "Shah",
+    "fullName": "Ananya Shah",
+    "email": "ananya.shah061@example.com",
+    "phone": "+91-6863204110",
+    "age": 30,
+    "dateOfBirth": "1996-04-04",
+    "gender": "female",
+    "isEmailVerified": true,
+    "status": "inactive",
+    "role": "user",
+    "occupation": "Graphic Designer",
+    "department": "Other",
+    "address": {
+      "street": "147 Riverfront Avenue",
+      "city": "Kolkata",
+      "state": "West Bengal",
+      "country": "India",
+      "postalCode": "700043"
+    },
+    "account": {
+      "plan": "premium",
+      "createdAt": "2024-01-11",
+      "lastLoginAt": "2024-05-22",
+      "loginCount": 626,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "dark",
+      "newsletterSubscribed": false,
+      "notifications": { "email": false, "sms": false, "push": false }
+    },
+    "skills": ["Node.js", "SQL"],
+    "tags": ["returning", "mobile-user", "early-access"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257963" },
+    "userId": "USR0063",
+    "firstName": "Varun",
+    "lastName": "Jain",
+    "fullName": "Varun Jain",
+    "email": "varun.jain063@example.com",
+    "phone": "+91-8493857758",
+    "age": 26,
+    "dateOfBirth": "2000-03-19",
+    "gender": "female",
+    "isEmailVerified": true,
+    "status": "pending_verification",
+    "role": "admin",
+    "occupation": "UI/UX Designer",
+    "department": "Finance",
+    "address": {
+      "street": "216 Lake View Road",
+      "city": "Ahmedabad",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "380015"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2024-10-26",
+      "lastLoginAt": "2024-12-11",
+      "loginCount": 656,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "system",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": true, "push": false }
+    },
+    "skills": ["TypeScript", "Python", "Excel", "MongoDB"],
+    "tags": ["early-access", "newsletter", "mobile-user"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257964" },
+    "userId": "USR0062",
+    "firstName": "Pooja",
+    "lastName": "Nair",
+    "fullName": "Pooja Nair",
+    "email": "pooja.nair062@example.com",
+    "phone": "+91-8524521602",
+    "age": 22,
+    "dateOfBirth": "2004-09-21",
+    "gender": "female",
+    "isEmailVerified": true,
+    "status": "inactive",
+    "role": "moderator",
+    "occupation": "UI/UX Designer",
+    "department": "Engineering",
+    "address": {
+      "street": "213 Station Road",
+      "city": "Vadodara",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "390023"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2026-08-25",
+      "lastLoginAt": "2026-09-13",
+      "loginCount": 168,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "system",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": false, "push": true }
+    },
+    "skills": ["MongoDB", "TypeScript", "Project Management", "Python"],
+    "tags": ["verified"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257965" },
+    "userId": "USR0045",
+    "firstName": "Pooja",
+    "lastName": "Gupta",
+    "fullName": "Pooja Gupta",
+    "email": "pooja.gupta045@example.com",
+    "phone": "+91-7589365925",
+    "age": 32,
+    "dateOfBirth": "1994-06-06",
+    "gender": "male",
+    "isEmailVerified": true,
+    "status": "pending_verification",
+    "role": "moderator",
+    "occupation": "Backend Developer",
+    "department": "Engineering",
+    "address": {
+      "street": "40 Green Park",
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "postalCode": "226034"
+    },
+    "account": {
+      "plan": "premium",
+      "createdAt": "2024-05-09",
+      "lastLoginAt": "2024-06-28",
+      "loginCount": 690,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "dark",
+      "newsletterSubscribed": false,
+      "notifications": { "email": false, "sms": false, "push": false }
+    },
+    "skills": ["MongoDB", "Project Management", "React", "SQL"],
+    "tags": ["returning", "newsletter"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257966" },
+    "userId": "USR0043",
+    "firstName": "Reyansh",
+    "lastName": "Iyer",
+    "fullName": "Reyansh Iyer",
+    "email": "reyansh.iyer043@example.com",
+    "phone": "+91-6655579180",
+    "age": 25,
+    "dateOfBirth": "2001-05-12",
+    "gender": "non_disclosed",
+    "isEmailVerified": false,
+    "status": "active",
+    "role": "user",
+    "occupation": "QA Engineer",
+    "department": "Design",
+    "address": {
+      "street": "24 Market Street",
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "postalCode": "226013"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2023-10-03",
+      "lastLoginAt": "2024-06-25",
+      "loginCount": 569,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "system",
+      "newsletterSubscribed": false,
+      "notifications": { "email": true, "sms": false, "push": false }
+    },
+    "skills": ["Customer Service", "JavaScript", "Python", "CSS", "SQL"],
+    "tags": ["mobile-user"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257967" },
+    "userId": "USR0064",
+    "firstName": "Arjun",
+    "lastName": "Patel",
+    "fullName": "Arjun Patel",
+    "email": "arjun.patel064@example.com",
+    "phone": "+91-6876272170",
+    "age": 33,
+    "dateOfBirth": "1993-08-15",
+    "gender": "male",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "admin",
+    "occupation": "Graphic Designer",
+    "department": "Finance",
+    "address": {
+      "street": "250 Market Street",
+      "city": "Vadodara",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "390011"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2024-06-19",
+      "lastLoginAt": "2025-11-28",
+      "loginCount": 575,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "light",
+      "newsletterSubscribed": false,
+      "notifications": { "email": true, "sms": false, "push": false }
+    },
+    "skills": ["Node.js", "React", "JavaScript"],
+    "tags": ["early-access", "referral"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257968" },
+    "userId": "USR0065",
+    "firstName": "Varun",
+    "lastName": "Malhotra",
+    "fullName": "Varun Malhotra",
+    "email": "varun.malhotra065@example.com",
+    "phone": "+91-7343100352",
+    "age": 36,
+    "dateOfBirth": "1990-10-24",
+    "gender": "female",
+    "isEmailVerified": true,
+    "status": "inactive",
+    "role": "moderator",
+    "occupation": "Teacher",
+    "department": "Healthcare",
+    "address": {
+      "street": "226 Shanti Nagar",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalCode": "400091"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2022-11-24",
+      "lastLoginAt": "2023-05-27",
+      "loginCount": 402,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "light",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": true, "push": true }
+    },
+    "skills": ["Excel", "CSS", "Customer Service", "Python"],
+    "tags": ["new-user", "early-access", "referral"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257969" },
+    "userId": "USR0040",
+    "firstName": "Kiara",
+    "lastName": "Gupta",
+    "fullName": "Kiara Gupta",
+    "email": "kiara.gupta040@example.com",
+    "phone": "+91-6910987546",
+    "age": 32,
+    "dateOfBirth": "1994-02-22",
+    "gender": "non_disclosed",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "Student",
+    "department": "Sales",
+    "address": {
+      "street": "202 MG Road",
+      "city": "Ahmedabad",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "380017"
+    },
+    "account": {
+      "plan": "premium",
+      "createdAt": "2026-08-15",
+      "lastLoginAt": "2026-09-10",
+      "loginCount": 600,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "dark",
+      "newsletterSubscribed": true,
+      "notifications": { "email": true, "sms": false, "push": true }
+    },
+    "skills": ["Project Management", "Python", "Node.js"],
+    "tags": ["new-user"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125796a" },
+    "userId": "USR0066",
+    "firstName": "Meera",
+    "lastName": "Mehta",
+    "fullName": "Meera Mehta",
+    "email": "meera.mehta066@example.com",
+    "phone": "+91-7731963069",
+    "age": 23,
+    "dateOfBirth": "2003-06-25",
+    "gender": "male",
+    "isEmailVerified": true,
+    "status": "inactive",
+    "role": "user",
+    "occupation": "Customer Support",
+    "department": "Other",
+    "address": {
+      "street": "50 Riverfront Avenue",
+      "city": "Nagpur",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalCode": "440027"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2023-06-26",
+      "lastLoginAt": "2023-11-23",
+      "loginCount": 395,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "system",
+      "newsletterSubscribed": false,
+      "notifications": { "email": true, "sms": true, "push": true }
+    },
+    "skills": [
+      "SQL",
+      "Customer Service",
+      "Project Management",
+      "TypeScript",
+      "Node.js"
+    ],
+    "tags": ["early-access"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125796b" },
+    "userId": "USR0067",
+    "firstName": "Yash",
+    "lastName": "Patel",
+    "fullName": "Yash Patel",
+    "email": "yash.patel067@example.com",
+    "phone": "+91-9453007060",
+    "age": 41,
+    "dateOfBirth": "1984-12-11",
+    "gender": "male",
+    "isEmailVerified": false,
+    "status": "active",
+    "role": "moderator",
+    "occupation": "UI/UX Designer",
+    "department": "Other",
+    "address": {
+      "street": "36 Riverfront Avenue",
+      "city": "Surat",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "395022"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2022-03-21",
+      "lastLoginAt": "2023-02-16",
+      "loginCount": 402,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "dark",
+      "newsletterSubscribed": false,
+      "notifications": { "email": false, "sms": false, "push": false }
+    },
+    "skills": ["SQL", "Customer Service"],
+    "tags": ["returning", "mobile-user", "verified"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125796c" },
+    "userId": "USR0068",
+    "firstName": "Avni",
+    "lastName": "Sharma",
+    "fullName": "Avni Sharma",
+    "email": "avni.sharma068@example.com",
+    "phone": "+91-9333590511",
+    "age": 37,
+    "dateOfBirth": "1988-11-26",
+    "gender": "non_disclosed",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "moderator",
+    "occupation": "Teacher",
+    "department": "Sales",
+    "address": {
+      "street": "135 Market Street",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "country": "India",
+      "postalCode": "560038"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2024-08-29",
+      "lastLoginAt": "2024-09-30",
+      "loginCount": 586,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "light",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": false, "push": false }
+    },
+    "skills": ["Communication", "MongoDB", "Customer Service"],
+    "tags": ["referral", "early-access", "beta-tester"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125796d" },
+    "userId": "USR0069",
+    "firstName": "Vihaan",
+    "lastName": "Mehta",
+    "fullName": "Vihaan Mehta",
+    "email": "vihaan.mehta069@example.com",
+    "phone": "+91-8054587733",
+    "age": 29,
+    "dateOfBirth": "1997-06-22",
+    "gender": "non_disclosed",
+    "isEmailVerified": false,
+    "status": "active",
+    "role": "user",
+    "occupation": "Teacher",
+    "department": "Other",
+    "address": {
+      "street": "88 Riverfront Avenue",
+      "city": "Delhi",
+      "state": "Delhi",
+      "country": "India",
+      "postalCode": "110045"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2023-03-01",
+      "lastLoginAt": "2026-08-01",
+      "loginCount": 495,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "dark",
+      "newsletterSubscribed": false,
+      "notifications": { "email": true, "sms": false, "push": false }
+    },
+    "skills": ["Customer Service", "Excel", "SQL"],
+    "tags": ["beta-tester", "verified"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125796e" },
+    "userId": "USR0070",
+    "firstName": "Kiara",
+    "lastName": "Reddy",
+    "fullName": "Kiara Reddy",
+    "email": "kiara.reddy070@example.com",
+    "phone": "+91-9847261858",
+    "age": 25,
+    "dateOfBirth": "2001-09-13",
+    "gender": "male",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "Frontend Developer",
+    "department": "Operations",
+    "address": {
+      "street": "245 Station Road",
+      "city": "Ahmedabad",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "380026"
+    },
+    "account": {
+      "plan": "basic",
+      "createdAt": "2025-03-20",
+      "lastLoginAt": "2025-12-07",
+      "loginCount": 765,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "light",
+      "newsletterSubscribed": false,
+      "notifications": { "email": false, "sms": true, "push": true }
+    },
+    "skills": ["MongoDB", "JavaScript", "Project Management"],
+    "tags": ["mobile-user"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125796f" },
+    "userId": "USR0071",
+    "firstName": "Vihaan",
+    "lastName": "Singh",
+    "fullName": "Vihaan Singh",
+    "email": "vihaan.singh071@example.com",
+    "phone": "+91-8925697292",
+    "age": 24,
+    "dateOfBirth": "2002-08-04",
+    "gender": "female",
+    "isEmailVerified": true,
+    "status": "pending_verification",
+    "role": "user",
+    "occupation": "Sales Executive",
+    "department": "Healthcare",
+    "address": {
+      "street": "123 MG Road",
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "postalCode": "226034"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2023-11-08",
+      "lastLoginAt": "2025-08-26",
+      "loginCount": 292,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "light",
+      "newsletterSubscribed": true,
+      "notifications": { "email": true, "sms": true, "push": false }
+    },
+    "skills": ["JavaScript", "Communication", "Excel"],
+    "tags": ["verified"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257970" },
+    "userId": "USR0072",
+    "firstName": "Aditya",
+    "lastName": "Sharma",
+    "fullName": "Aditya Sharma",
+    "email": "aditya.sharma072@example.com",
+    "phone": "+91-7222182982",
+    "age": 27,
+    "dateOfBirth": "1999-02-11",
+    "gender": "male",
+    "isEmailVerified": false,
+    "status": "active",
+    "role": "moderator",
+    "occupation": "Teacher",
+    "department": "Operations",
+    "address": {
+      "street": "50 Station Road",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalCode": "411011"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2025-03-09",
+      "lastLoginAt": "2026-06-21",
+      "loginCount": 663,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "light",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": false, "push": true }
+    },
+    "skills": ["CSS", "TypeScript", "Communication"],
+    "tags": ["beta-tester", "new-user"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257971" },
+    "userId": "USR0073",
+    "firstName": "Ishita",
+    "lastName": "Singh",
+    "fullName": "Ishita Singh",
+    "email": "ishita.singh073@example.com",
+    "phone": "+91-6029335155",
+    "age": 31,
+    "dateOfBirth": "1995-06-08",
+    "gender": "male",
+    "isEmailVerified": false,
+    "status": "active",
+    "role": "user",
+    "occupation": "HR Executive",
+    "department": "Operations",
+    "address": {
+      "street": "245 Riverfront Avenue",
+      "city": "Vadodara",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "390016"
+    },
+    "account": {
+      "plan": "premium",
+      "createdAt": "2022-10-15",
+      "lastLoginAt": "2025-12-31",
+      "loginCount": 11,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "dark",
+      "newsletterSubscribed": true,
+      "notifications": { "email": true, "sms": true, "push": false }
+    },
+    "skills": ["Node.js", "Communication", "Project Management", "Python"],
+    "tags": ["returning", "beta-tester", "newsletter"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257972" },
+    "userId": "USR0074",
+    "firstName": "Rohan",
+    "lastName": "Das",
+    "fullName": "Rohan Das",
+    "email": "rohan.das074@example.com",
+    "phone": "+91-7954118497",
+    "age": 42,
+    "dateOfBirth": "1984-08-05",
+    "gender": "non_disclosed",
+    "isEmailVerified": true,
+    "status": "inactive",
+    "role": "admin",
+    "occupation": "Data Analyst",
+    "department": "Healthcare",
+    "address": {
+      "street": "194 MG Road",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalCode": "400100"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2023-03-25",
+      "lastLoginAt": "2026-07-27",
+      "loginCount": 806,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "dark",
+      "newsletterSubscribed": false,
+      "notifications": { "email": true, "sms": true, "push": true }
+    },
+    "skills": ["CSS", "Project Management", "Node.js"],
+    "tags": ["beta-tester"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257973" },
+    "userId": "USR0075",
+    "firstName": "Pooja",
+    "lastName": "Chauhan",
+    "fullName": "Pooja Chauhan",
+    "email": "pooja.chauhan075@example.com",
+    "phone": "+91-8099500153",
+    "age": 39,
+    "dateOfBirth": "1986-12-19",
+    "gender": "female",
+    "isEmailVerified": false,
+    "status": "active",
+    "role": "user",
+    "occupation": "Product Manager",
+    "department": "Other",
+    "address": {
+      "street": "107 Gandhi Road",
+      "city": "Ahmedabad",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "380033"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2025-10-25",
+      "lastLoginAt": "2026-08-07",
+      "loginCount": 473,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "system",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": false, "push": true }
+    },
+    "skills": ["CSS", "React", "JavaScript"],
+    "tags": ["beta-tester", "referral"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257974" },
+    "userId": "USR0076",
+    "firstName": "Arjun",
+    "lastName": "Jain",
+    "fullName": "Arjun Jain",
+    "email": "arjun.jain076@example.com",
+    "phone": "+91-7756070122",
+    "age": 31,
+    "dateOfBirth": "1995-01-10",
+    "gender": "female",
+    "isEmailVerified": true,
+    "status": "inactive",
+    "role": "user",
+    "occupation": "UI/UX Designer",
+    "department": "Education",
+    "address": {
+      "street": "115 Market Street",
+      "city": "Surat",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "395015"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2022-05-22",
+      "lastLoginAt": "2026-03-20",
+      "loginCount": 677,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "system",
+      "newsletterSubscribed": false,
+      "notifications": { "email": true, "sms": true, "push": false }
+    },
+    "skills": ["Customer Service", "MongoDB", "JavaScript"],
+    "tags": ["verified"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257975" },
+    "userId": "USR0083",
+    "firstName": "Kunal",
+    "lastName": "Jain",
+    "fullName": "Kunal Jain",
+    "email": "kunal.jain083@example.com",
+    "phone": "+91-7180002487",
+    "age": 46,
+    "dateOfBirth": "1980-09-24",
+    "gender": "non_disclosed",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "moderator",
+    "occupation": "QA Engineer",
+    "department": "Education",
+    "address": {
+      "street": "207 Green Park",
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "postalCode": "226013"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2022-01-25",
+      "lastLoginAt": "2025-01-02",
+      "loginCount": 152,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "system",
+      "newsletterSubscribed": false,
+      "notifications": { "email": false, "sms": false, "push": false }
+    },
+    "skills": ["SQL", "Communication"],
+    "tags": ["mobile-user", "beta-tester"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257976" },
+    "userId": "USR0081",
+    "firstName": "Yash",
+    "lastName": "Mishra",
+    "fullName": "Yash Mishra",
+    "email": "yash.mishra081@example.com",
+    "phone": "+91-9271171496",
+    "age": 20,
+    "dateOfBirth": "2005-12-16",
+    "gender": "male",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "Sales Executive",
+    "department": "Engineering",
+    "address": {
+      "street": "145 MG Road",
+      "city": "Noida",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "postalCode": "201324"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2022-07-21",
+      "lastLoginAt": "2022-08-23",
+      "loginCount": 267,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "system",
+      "newsletterSubscribed": false,
+      "notifications": { "email": false, "sms": true, "push": true }
+    },
+    "skills": ["MongoDB", "Communication", "CSS", "Customer Service"],
+    "tags": ["beta-tester", "newsletter"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257977" },
+    "userId": "USR0082",
+    "firstName": "Tara",
+    "lastName": "Mishra",
+    "fullName": "Tara Mishra",
+    "email": "tara.mishra082@example.com",
+    "phone": "+91-6601117291",
+    "age": 23,
+    "dateOfBirth": "2003-06-06",
+    "gender": "non_disclosed",
+    "isEmailVerified": false,
+    "status": "active",
+    "role": "moderator",
+    "occupation": "Marketing Specialist",
+    "department": "Engineering",
+    "address": {
+      "street": "135 Lake View Road",
+      "city": "Noida",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "postalCode": "201303"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2022-12-11",
+      "lastLoginAt": "2022-12-24",
+      "loginCount": 422,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "light",
+      "newsletterSubscribed": true,
+      "notifications": { "email": true, "sms": true, "push": true }
+    },
+    "skills": ["SQL", "JavaScript", "CSS", "Excel", "Project Management"],
+    "tags": ["new-user"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257978" },
+    "userId": "USR0084",
+    "firstName": "Saanvi",
+    "lastName": "Reddy",
+    "fullName": "Saanvi Reddy",
+    "email": "saanvi.reddy084@example.com",
+    "phone": "+91-8791275402",
+    "age": 43,
+    "dateOfBirth": "1982-11-28",
+    "gender": "female",
+    "isEmailVerified": true,
+    "status": "inactive",
+    "role": "user",
+    "occupation": "Sales Executive",
+    "department": "Other",
+    "address": {
+      "street": "122 Lake View Road",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "postalCode": "500101"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2026-08-23",
+      "lastLoginAt": "2026-10-06",
+      "loginCount": 175,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "dark",
+      "newsletterSubscribed": false,
+      "notifications": { "email": true, "sms": true, "push": true }
+    },
+    "skills": ["Customer Service", "CSS", "Excel"],
+    "tags": ["new-user", "referral"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257979" },
+    "userId": "USR0085",
+    "firstName": "Kiara",
+    "lastName": "Jain",
+    "fullName": "Kiara Jain",
+    "email": "kiara.jain085@example.com",
+    "phone": "+91-7350701477",
+    "age": 45,
+    "dateOfBirth": "1981-03-28",
+    "gender": "female",
+    "isEmailVerified": true,
+    "status": "pending_verification",
+    "role": "user",
+    "occupation": "HR Executive",
+    "department": "Education",
+    "address": {
+      "street": "238 Station Road",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "country": "India",
+      "postalCode": "560043"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2025-09-09",
+      "lastLoginAt": "2026-06-24",
+      "loginCount": 246,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "system",
+      "newsletterSubscribed": false,
+      "notifications": { "email": false, "sms": true, "push": true }
+    },
+    "skills": ["JavaScript", "React", "Communication", "MongoDB"],
+    "tags": ["beta-tester"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125797a" },
+    "userId": "USR0086",
+    "firstName": "Sneha",
+    "lastName": "Das",
+    "fullName": "Sneha Das",
+    "email": "sneha.das086@example.com",
+    "phone": "+91-8723537339",
+    "age": 22,
+    "dateOfBirth": "2004-06-01",
+    "gender": "male",
+    "isEmailVerified": false,
+    "status": "inactive",
+    "role": "user",
+    "occupation": "Graphic Designer",
+    "department": "Other",
+    "address": {
+      "street": "241 Market Street",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "country": "India",
+      "postalCode": "560047"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2024-03-23",
+      "lastLoginAt": "2026-02-17",
+      "loginCount": 599,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "light",
+      "newsletterSubscribed": false,
+      "notifications": { "email": true, "sms": true, "push": true }
+    },
+    "skills": ["Node.js", "Communication", "Customer Service", "TypeScript"],
+    "tags": ["beta-tester", "new-user"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125797b" },
+    "userId": "USR0087",
+    "firstName": "Sai",
+    "lastName": "Sharma",
+    "fullName": "Sai Sharma",
+    "email": "sai.sharma087@example.com",
+    "phone": "+91-6569113257",
+    "age": 35,
+    "dateOfBirth": "1991-05-04",
+    "gender": "female",
+    "isEmailVerified": true,
+    "status": "inactive",
+    "role": "user",
+    "occupation": "Data Analyst",
+    "department": "Other",
+    "address": {
+      "street": "132 Market Street",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalCode": "411004"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2024-06-29",
+      "lastLoginAt": "2024-09-28",
+      "loginCount": 362,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "system",
+      "newsletterSubscribed": false,
+      "notifications": { "email": false, "sms": true, "push": false }
+    },
+    "skills": [
+      "Communication",
+      "React",
+      "Project Management",
+      "MongoDB",
+      "Node.js"
+    ],
+    "tags": ["early-access", "returning", "referral"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125797c" },
+    "userId": "USR0088",
+    "firstName": "Kiara",
+    "lastName": "Reddy",
+    "fullName": "Kiara Reddy",
+    "email": "kiara.reddy088@example.com",
+    "phone": "+91-7866920369",
+    "age": 42,
+    "dateOfBirth": "1984-02-06",
+    "gender": "male",
+    "isEmailVerified": false,
+    "status": "active",
+    "role": "user",
+    "occupation": "HR Executive",
+    "department": "Design",
+    "address": {
+      "street": "93 Shanti Nagar",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalCode": "411008"
+    },
+    "account": {
+      "plan": "basic",
+      "createdAt": "2024-10-06",
+      "lastLoginAt": "2026-06-06",
+      "loginCount": 631,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "light",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": true, "push": false }
+    },
+    "skills": ["CSS", "Communication", "SQL", "Excel"],
+    "tags": ["early-access", "referral"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125797d" },
+    "userId": "USR0089",
+    "firstName": "Sneha",
+    "lastName": "Mehta",
+    "fullName": "Sneha Mehta",
+    "email": "sneha.mehta089@example.com",
+    "phone": "+91-8057331177",
+    "age": 26,
+    "dateOfBirth": "1999-12-07",
+    "gender": "male",
+    "isEmailVerified": true,
+    "status": "inactive",
+    "role": "user",
+    "occupation": "Accountant",
+    "department": "Healthcare",
+    "address": {
+      "street": "248 MG Road",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalCode": "411011"
+    },
+    "account": {
+      "plan": "basic",
+      "createdAt": "2023-10-19",
+      "lastLoginAt": "2025-05-15",
+      "loginCount": 836,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "light",
+      "newsletterSubscribed": true,
+      "notifications": { "email": true, "sms": true, "push": false }
+    },
+    "skills": ["Excel", "Python", "React"],
+    "tags": ["referral", "returning"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125797e" },
+    "userId": "USR0090",
+    "firstName": "Avni",
+    "lastName": "Joshi",
+    "fullName": "Avni Joshi",
+    "email": "avni.joshi090@example.com",
+    "phone": "+91-9389058904",
+    "age": 41,
+    "dateOfBirth": "1984-12-14",
+    "gender": "male",
+    "isEmailVerified": true,
+    "status": "inactive",
+    "role": "moderator",
+    "occupation": "Teacher",
+    "department": "Education",
+    "address": {
+      "street": "137 Market Street",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalCode": "411018"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2025-09-10",
+      "lastLoginAt": "2026-10-19",
+      "loginCount": 368,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "system",
+      "newsletterSubscribed": true,
+      "notifications": { "email": true, "sms": true, "push": false }
+    },
+    "skills": ["TypeScript", "CSS", "JavaScript"],
+    "tags": ["early-access", "referral", "newsletter"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125797f" },
+    "userId": "USR0091",
+    "firstName": "Meera",
+    "lastName": "Singh",
+    "fullName": "Meera Singh",
+    "email": "meera.singh091@example.com",
+    "phone": "+91-9207709343",
+    "age": 38,
+    "dateOfBirth": "1988-04-17",
+    "gender": "non_disclosed",
+    "isEmailVerified": true,
+    "status": "inactive",
+    "role": "user",
+    "occupation": "Sales Executive",
+    "department": "Healthcare",
+    "address": {
+      "street": "198 Green Park",
+      "city": "Surat",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "395014"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2022-07-21",
+      "lastLoginAt": "2025-04-04",
+      "loginCount": 107,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "light",
+      "newsletterSubscribed": true,
+      "notifications": { "email": true, "sms": false, "push": false }
+    },
+    "skills": ["Excel", "MongoDB", "Project Management", "Customer Service"],
+    "tags": ["referral", "new-user"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257980" },
+    "userId": "USR0092",
+    "firstName": "Dev",
+    "lastName": "Chauhan",
+    "fullName": "Dev Chauhan",
+    "email": "dev.chauhan092@example.com",
+    "phone": "+91-9052772528",
+    "age": 37,
+    "dateOfBirth": "1989-01-26",
+    "gender": "female",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "admin",
+    "occupation": "Backend Developer",
+    "department": "Sales",
+    "address": {
+      "street": "239 MG Road",
+      "city": "Jaipur",
+      "state": "Rajasthan",
+      "country": "India",
+      "postalCode": "302033"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2022-05-18",
+      "lastLoginAt": "2025-06-21",
+      "loginCount": 163,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "dark",
+      "newsletterSubscribed": false,
+      "notifications": { "email": true, "sms": false, "push": true }
+    },
+    "skills": ["TypeScript", "Customer Service", "Communication"],
+    "tags": ["new-user", "beta-tester"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257981" },
+    "userId": "USR0077",
+    "firstName": "Nisha",
+    "lastName": "Jain",
+    "fullName": "Nisha Jain",
+    "email": "nisha.jain077@example.com",
+    "phone": "+91-7978370498",
+    "age": 34,
+    "dateOfBirth": "1992-04-08",
+    "gender": "male",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "UI/UX Designer",
+    "department": "Design",
+    "address": {
+      "street": "9 Market Street",
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "postalCode": "226029"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2024-12-25",
+      "lastLoginAt": "2025-08-28",
+      "loginCount": 211,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "system",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": true, "push": true }
+    },
+    "skills": ["Communication", "Excel"],
+    "tags": ["mobile-user"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257982" },
+    "userId": "USR0079",
+    "firstName": "Ishaan",
+    "lastName": "Reddy",
+    "fullName": "Ishaan Reddy",
+    "email": "ishaan.reddy079@example.com",
+    "phone": "+91-7034950478",
+    "age": 22,
+    "dateOfBirth": "2004-09-16",
+    "gender": "female",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "UI/UX Designer",
+    "department": "Engineering",
+    "address": {
+      "street": "144 Market Street",
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "postalCode": "226023"
+    },
+    "account": {
+      "plan": "premium",
+      "createdAt": "2023-01-12",
+      "lastLoginAt": "2026-01-01",
+      "loginCount": 137,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "dark",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": true, "push": false }
+    },
+    "skills": ["React", "Project Management", "MongoDB", "JavaScript"],
+    "tags": ["early-access", "beta-tester"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257983" },
+    "userId": "USR0080",
+    "firstName": "Sneha",
+    "lastName": "Das",
+    "fullName": "Sneha Das",
+    "email": "sneha.das080@example.com",
+    "phone": "+91-8883858045",
+    "age": 40,
+    "dateOfBirth": "1986-10-24",
+    "gender": "non_disclosed",
+    "isEmailVerified": true,
+    "status": "inactive",
+    "role": "user",
+    "occupation": "QA Engineer",
+    "department": "Finance",
+    "address": {
+      "street": "78 Lake View Road",
+      "city": "Surat",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "395009"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2022-05-30",
+      "lastLoginAt": "2026-07-26",
+      "loginCount": 120,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "light",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": true, "push": false }
+    },
+    "skills": ["Communication", "Excel", "Project Management", "SQL"],
+    "tags": ["verified", "newsletter"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257984" },
+    "userId": "USR0078",
+    "firstName": "Vihaan",
+    "lastName": "Mehta",
+    "fullName": "Vihaan Mehta",
+    "email": "vihaan.mehta078@example.com",
+    "phone": "+91-7369680934",
+    "age": 38,
+    "dateOfBirth": "1987-12-19",
+    "gender": "non_disclosed",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "UI/UX Designer",
+    "department": "Sales",
+    "address": {
+      "street": "170 MG Road",
+      "city": "Delhi",
+      "state": "Delhi",
+      "country": "India",
+      "postalCode": "110037"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2023-08-16",
+      "lastLoginAt": "2025-03-01",
+      "loginCount": 62,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "system",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": false, "push": true }
+    },
+    "skills": [
+      "TypeScript",
+      "Customer Service",
+      "Communication",
+      "Project Management"
+    ],
+    "tags": ["early-access", "mobile-user"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257985" },
+    "userId": "USR0094",
+    "firstName": "Diya",
+    "lastName": "Reddy",
+    "fullName": "Diya Reddy",
+    "email": "diya.reddy094@example.com",
+    "phone": "+91-6575301286",
+    "age": 28,
+    "dateOfBirth": "1998-02-22",
+    "gender": "male",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "Backend Developer",
+    "department": "Sales",
+    "address": {
+      "street": "96 Green Park",
+      "city": "Nagpur",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalCode": "440026"
+    },
+    "account": {
+      "plan": "basic",
+      "createdAt": "2025-06-12",
+      "lastLoginAt": "2026-01-12",
+      "loginCount": 610,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "dark",
+      "newsletterSubscribed": false,
+      "notifications": { "email": true, "sms": false, "push": true }
+    },
+    "skills": ["Excel", "Python", "Node.js"],
+    "tags": ["beta-tester"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257986" },
+    "userId": "USR0098",
+    "firstName": "Manav",
+    "lastName": "Khan",
+    "fullName": "Manav Khan",
+    "email": "manav.khan098@example.com",
+    "phone": "+91-8214542998",
+    "age": 26,
+    "dateOfBirth": "2000-02-13",
+    "gender": "non_disclosed",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "user",
+    "occupation": "Teacher",
+    "department": "Finance",
+    "address": {
+      "street": "149 Lake View Road",
+      "city": "Noida",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "postalCode": "201325"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2022-06-04",
+      "lastLoginAt": "2026-07-09",
+      "loginCount": 469,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "system",
+      "newsletterSubscribed": false,
+      "notifications": { "email": true, "sms": false, "push": true }
+    },
+    "skills": ["MongoDB", "Excel", "Python", "SQL", "CSS"],
+    "tags": ["newsletter", "verified"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257987" },
+    "userId": "USR0100",
+    "firstName": "Saanvi",
+    "lastName": "Malhotra",
+    "fullName": "Saanvi Malhotra",
+    "email": "saanvi.malhotra100@example.com",
+    "phone": "+91-6916636971",
+    "age": 24,
+    "dateOfBirth": "2002-02-01",
+    "gender": "male",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "moderator",
+    "occupation": "Student",
+    "department": "Other",
+    "address": {
+      "street": "175 Gandhi Road",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "postalCode": "500081"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2022-07-06",
+      "lastLoginAt": "2026-05-30",
+      "loginCount": 351,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "system",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": true, "push": true }
+    },
+    "skills": [
+      "React",
+      "Customer Service",
+      "TypeScript",
+      "SQL",
+      "Project Management"
+    ],
+    "tags": ["newsletter", "mobile-user"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257988" },
+    "userId": "USR0093",
+    "firstName": "Varun",
+    "lastName": "Gupta",
+    "fullName": "Varun Gupta",
+    "email": "varun.gupta093@example.com",
+    "phone": "+91-9026816435",
+    "age": 33,
+    "dateOfBirth": "1993-07-01",
+    "gender": "female",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "admin",
+    "occupation": "HR Executive",
+    "department": "Design",
+    "address": {
+      "street": "148 Station Road",
+      "city": "Noida",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "postalCode": "201326"
+    },
+    "account": {
+      "plan": "premium",
+      "createdAt": "2025-04-27",
+      "lastLoginAt": "2025-11-04",
+      "loginCount": 374,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "dark",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": false, "push": false }
+    },
+    "skills": ["CSS", "Communication", "Customer Service", "React", "SQL"],
+    "tags": ["referral", "verified"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b1257989" },
+    "userId": "USR0095",
+    "firstName": "Dev",
+    "lastName": "Das",
+    "fullName": "Dev Das",
+    "email": "dev.das095@example.com",
+    "phone": "+91-6838070464",
+    "age": 46,
+    "dateOfBirth": "1980-08-05",
+    "gender": "male",
+    "isEmailVerified": false,
+    "status": "inactive",
+    "role": "admin",
+    "occupation": "Teacher",
+    "department": "Education",
+    "address": {
+      "street": "182 Gandhi Road",
+      "city": "Surat",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "395018"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2024-01-06",
+      "lastLoginAt": "2024-03-30",
+      "loginCount": 578,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "dark",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": true, "push": false }
+    },
+    "skills": ["Excel", "CSS", "Customer Service"],
+    "tags": ["returning", "verified", "new-user"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125798a" },
+    "userId": "USR0099",
+    "firstName": "Tara",
+    "lastName": "Iyer",
+    "fullName": "Tara Iyer",
+    "email": "tara.iyer099@example.com",
+    "phone": "+91-6427670241",
+    "age": 22,
+    "dateOfBirth": "2004-01-02",
+    "gender": "non_disclosed",
+    "isEmailVerified": false,
+    "status": "active",
+    "role": "user",
+    "occupation": "UI/UX Designer",
+    "department": "Sales",
+    "address": {
+      "street": "113 Gandhi Road",
+      "city": "Nagpur",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalCode": "440010"
+    },
+    "account": {
+      "plan": "basic",
+      "createdAt": "2025-10-29",
+      "lastLoginAt": "2026-02-09",
+      "loginCount": 705,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "gu",
+      "theme": "dark",
+      "newsletterSubscribed": true,
+      "notifications": { "email": false, "sms": true, "push": false }
+    },
+    "skills": ["React", "SQL", "Node.js", "JavaScript"],
+    "tags": ["verified", "beta-tester"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125798b" },
+    "userId": "USR0097",
+    "firstName": "Riya",
+    "lastName": "Nair",
+    "fullName": "Riya Nair",
+    "email": "riya.nair097@example.com",
+    "phone": "+91-7390081665",
+    "age": 27,
+    "dateOfBirth": "1999-09-06",
+    "gender": "non_disclosed",
+    "isEmailVerified": true,
+    "status": "active",
+    "role": "moderator",
+    "occupation": "Accountant",
+    "department": "Other",
+    "address": {
+      "street": "231 Station Road",
+      "city": "Delhi",
+      "state": "Delhi",
+      "country": "India",
+      "postalCode": "110028"
+    },
+    "account": {
+      "plan": "basic",
+      "createdAt": "2023-07-30",
+      "lastLoginAt": "2023-11-28",
+      "loginCount": 283,
+      "twoFactorEnabled": false
+    },
+    "preferences": {
+      "language": "en",
+      "theme": "system",
+      "newsletterSubscribed": true,
+      "notifications": { "email": true, "sms": true, "push": false }
+    },
+    "skills": ["TypeScript", "Communication", "Excel"],
+    "tags": ["verified"]
+  },
+  {
+    "_id": { "$oid": "6adc659b3924c652b125798c" },
+    "userId": "USR0096",
+    "firstName": "Kiara",
+    "lastName": "Jain",
+    "fullName": "Kiara Jain",
+    "email": "kiara.jain096@example.com",
+    "phone": "+91-9087996613",
+    "age": 29,
+    "dateOfBirth": "1997-01-25",
+    "gender": "male",
+    "isEmailVerified": true,
+    "status": "inactive",
+    "role": "user",
+    "occupation": "Business Owner",
+    "department": "Marketing",
+    "address": {
+      "street": "77 Lake View Road",
+      "city": "Indore",
+      "state": "Madhya Pradesh",
+      "country": "India",
+      "postalCode": "452015"
+    },
+    "account": {
+      "plan": "free",
+      "createdAt": "2024-01-22",
+      "lastLoginAt": "2025-01-12",
+      "loginCount": 836,
+      "twoFactorEnabled": true
+    },
+    "preferences": {
+      "language": "hi",
+      "theme": "light",
+      "newsletterSubscribed": true,
+      "notifications": { "email": true, "sms": false, "push": false }
+    },
+    "skills": ["CSS", "Node.js", "MongoDB"],
+    "tags": ["new-user"]
+  }
+]
