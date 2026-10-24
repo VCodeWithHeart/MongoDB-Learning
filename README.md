@@ -34,7 +34,8 @@ MongoDB Learning/
 │   ├── 06-logical-operators.mongodb.js
 │   ├── 07-complex-expressions.mongodb.js
 │   ├── 08-element-operators.mongodb.js
-│   └── 09-projection.mongodb.js
+│   ├── 09-projection.mongodb.js
+│   └── 10-embedded-documents.mongodb.js
 └── README.md
 ```
 
@@ -112,6 +113,12 @@ File: [Reading Documents/09-projection.mongodb.js](./Reading%20Documents/09-proj
 
 Use the second argument to `find()` to include or exclude fields in the returned documents. `_id` is included by default and may be excluded in an inclusion projection. Do not mix inclusion and exclusion fields in one projection, except for `_id`.
 
+### 11. Embedded documents and dot notation
+
+File: [Reading Documents/10-embedded-documents.mongodb.js](./Reading%20Documents/10-embedded-documents.mongodb.js)
+
+Query nested fields by joining their names with dots, such as `"supplier.rating"` or `"stock.available"`. Dot notation also checks embedded documents in arrays, so `"skills.language": "JS"` finds users with at least one skill whose language is JS.
+
 ## Cheatsheet
 
 ### Database and collection commands
@@ -151,6 +158,21 @@ db.products.find({ price: { $in: [10, 20, 30] } })
 ```
 
 Common comparison operators: `$eq`, `$ne`, `$gt`, `$gte`, `$lt`, `$lte`, `$in`, `$nin`.
+
+### Embedded documents and arrays
+
+Use dot notation to query a field inside a nested document:
+
+```javascript
+db.products.find({ "supplier.rating": { $gt: 4.5 } })
+db.products.find({ "stock.available": { $lte: 10 } })
+```
+
+For an array of embedded documents, dot notation matches when at least one array element has the specified field value:
+
+```javascript
+db.users.find({ "skills.language": "JS" })
+```
 
 ### Combine conditions
 
