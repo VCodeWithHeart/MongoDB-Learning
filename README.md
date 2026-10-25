@@ -35,7 +35,8 @@ MongoDB Learning/
 │   ├── 07-complex-expressions.mongodb.js
 │   ├── 08-element-operators.mongodb.js
 │   ├── 09-projection.mongodb.js
-│   └── 10-embedded-documents.mongodb.js
+│   ├── 10-embedded-documents.mongodb.js
+│   └── 11-array-query-operators.mongodb.js
 └── README.md
 ```
 
@@ -119,6 +120,12 @@ File: [Reading Documents/10-embedded-documents.mongodb.js](./Reading%20Documents
 
 Query nested fields by joining their names with dots, such as `"supplier.rating"` or `"stock.available"`. Dot notation also checks embedded documents in arrays, so `"skills.language": "JS"` finds users with at least one skill whose language is JS.
 
+### 12. Array query operators
+
+File: [Reading Documents/11-array-query-operators.mongodb.js](./Reading%20Documents/11-array-query-operators.mongodb.js)
+
+Use `$all` to require an array to contain every specified value. Use `$elemMatch` when multiple conditions must match the same object in an array, such as finding a comment with a particular user, status, and minimum number of likes.
+
 ## Cheatsheet
 
 ### Database and collection commands
@@ -172,6 +179,22 @@ For an array of embedded documents, dot notation matches when at least one array
 
 ```javascript
 db.users.find({ "skills.language": "JS" })
+```
+
+For arrays, `$all` requires all specified values to be present, while `$elemMatch` requires one array element to satisfy every specified condition:
+
+```javascript
+db.videos.find({ tags: { $all: ["mongodb", "backend"] } })
+
+db.videos.find({
+  comments: {
+    $elemMatch: {
+      "user.username": "amit",
+      status: "pinned",
+      likes: { $gte: 20 },
+    },
+  },
+})
 ```
 
 ### Combine conditions
