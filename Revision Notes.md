@@ -18,6 +18,7 @@ Use the questions before the answer key for active recall. The examples follow t
 | Output | Projection | Choose which fields `find()` returns. | You want to include or exclude fields in the result. |
 | Nested data | Dot notation | Query fields inside embedded documents or array elements. | A field is nested, such as `stock.available` or `skills.language`. |
 | Arrays | `$all`, `$elemMatch` | Require multiple array values or conditions on one array element. | You are filtering tags or objects stored in an array. |
+| Update operations | `updateOne()`, `updateMany()`, `$set`, `$unset`, `$rename`, `$inc` | Change matching documents or add/remove fields. | You need to mutate one or many documents in place. |
 | Data tools | `mongoimport`, `mongoexport` | Import or export JSON and CSV data from a terminal. | You need to move collection data to or from files. |
 
 ## B. Topic-Wise Revision Notes
@@ -259,6 +260,26 @@ mongoimport --db shop --collection users --file ".\Importing and Exporting Data\
 **Related concepts:** `mongoexport --jsonArray` controls the export format; `--type=csv` with `--fields` exports selected columns as CSV.
 
 **Active recall:** Which input file in this workspace needs `--jsonArray`? Do you run `mongoimport` inside `mongosh`?
+
+### 13. Update operations
+**Core idea:** `updateOne()` changes the first matching document; `updateMany()` changes every matching document. Update operators such as `$set`, `$unset`, `$rename`, and `$inc` mutate fields without replacing the whole document.
+
+**When to use it:** Use update operations when you need to edit a field value, add a new field, remove a field, rename a field, or increment a numeric value on matching products.
+
+**Basic syntax:**
+```javascript
+db.products.updateOne({ productId: "PRD-0001" }, { $set: { price: 199 } });
+db.products.updateMany({ category: "Electronics" }, { $set: { isPublished: false } });
+db.products.updateMany({ featured: { $exists: true } }, { $unset: { featured: 1 } });
+```
+
+**Example from my practice:** The current progress item in the repo is `Update Operations/12-update-operations.mongodb.js`, which covers nested updates, `$inc`, `$rename`, and matching filters.
+
+**Common mistake:** `updateOne()` updates only the first match; it is not a global update. `$rename` changes the field name but keeps its value, while `$unset` removes the field entirely.
+
+**Related concepts:** `$set` creates a field when missing. `$inc` increments an existing numeric field; `$rename` and `$unset` are useful when cleaning up document structure.
+
+**Active recall:** Which operator adds a new field if it does not already exist? If you want to remove a field without deleting the document, which operator do you use?
 
 ## C. Important Differences Between Similar Concepts
 

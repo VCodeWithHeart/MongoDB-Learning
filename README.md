@@ -37,6 +37,8 @@ MongoDB Learning/
 │   ├── 09-projection.mongodb.js
 │   ├── 10-embedded-documents.mongodb.js
 │   └── 11-array-query-operators.mongodb.js
+├── Update Operations/
+│   └── 12-update-operations.mongodb.js
 └── README.md
 ```
 
@@ -125,6 +127,12 @@ Query nested fields by joining their names with dots, such as `"supplier.rating"
 File: [Reading Documents/11-array-query-operators.mongodb.js](./Reading%20Documents/11-array-query-operators.mongodb.js)
 
 Use `$all` to require an array to contain every specified value. Use `$elemMatch` when multiple conditions must match the same object in an array, such as finding a comment with a particular user, status, and minimum number of likes.
+
+### 13. Update operations
+
+File: [Update Operations/12-update-operations.mongodb.js](./Update%20Operations/12-update-operations.mongodb.js)
+
+This lesson covers the current progress in the repo: mutating documents with `updateOne()` and `updateMany()`, including `$set`, `$inc`, `$unset`, and `$rename`. It also demonstrates how to update nested fields and filter documents before applying changes.
 
 ## Cheatsheet
 
@@ -324,12 +332,13 @@ By working through the lessons, you will practice:
 - importing, exporting, filtering, and projecting documents
 - querying with comparison, logical, expression, and element operators
 - working with query cursors
+- updating documents with `updateOne()` and `updateMany()`
 
 ## Notes
 
-This repository is intentionally beginner-friendly and focused on fundamental database operations. It is a starting point for deeper topics such as:
+This repository is intentionally beginner-friendly and focused on fundamental database operations. It currently includes the core read and update workflows and is a starting point for deeper topics such as:
 
-- updating and deleting documents
+- deleting documents
 - aggregation
 - indexing and performance
 - data modeling
@@ -339,7 +348,6 @@ This repository is intentionally beginner-friendly and focused on fundamental da
 
 As you progress, explore:
 
-- `updateOne()` and `updateMany()`
 - delete operations
 - aggregation pipelines such as `$group`
 - indexes and query performance
