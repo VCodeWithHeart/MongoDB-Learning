@@ -13,7 +13,7 @@ MongoDB is a document-oriented NoSQL database that stores data in flexible JSON-
 - Documents
 - Fields
 
-This repository helps you learn the fundamentals through practical examples, from database basics and inserting documents to importing data and querying documents.
+This repository helps you learn MongoDB fundamentals through practical examples covering databases, importing and exporting, querying, updating, deleting, and indexes.
 
 ## Repository structure
 
@@ -38,8 +38,14 @@ MongoDB Learning/
 │   ├── 10-embedded-documents.mongodb.js
 │   └── 11-array-query-operators.mongodb.js
 ├── Update Operations/
-│   └── 12-update-operations.mongodb.js
-└── README.md
+│   ├── 12-update-operations.mongodb.js
+│   └── 13-updating-arrays-and-embedded-documents.mongodb.js
+├── Delete Operations/
+│   └── 14-delete-operations.mongodb.js
+├── Indexes/
+│   └── 15-indexes.mongodb.js
+├── README.md
+└── Revision Notes.md
 ```
 
 ## Included lessons
@@ -130,9 +136,23 @@ Use `$all` to require an array to contain every specified value. Use `$elemMatch
 
 ### 13. Update operations
 
-File: [Update Operations/12-update-operations.mongodb.js](./Update%20Operations/12-update-operations.mongodb.js)
+Files:
+[12-update-operations.mongodb.js](./Update%20Operations/12-update-operations.mongodb.js) ·
+[13-updating-arrays-and-embedded-documents.mongodb.js](./Update%20Operations/13-updating-arrays-and-embedded-documents.mongodb.js)
 
-This lesson covers the current progress in the repo: mutating documents with `updateOne()` and `updateMany()`, including `$set`, `$inc`, `$unset`, and `$rename`. It also demonstrates how to update nested fields and filter documents before applying changes.
+The update lessons cover `updateOne()` and `updateMany()`, field operators such as `$set`, `$inc`, `$unset`, and `$rename`, and updates to nested fields and arrays. Array examples include `$push`, `$each`, `$addToSet`, `$pull`, `$pullAll`, `$pop`, positional operators, and `arrayFilters`.
+
+### 14. Delete operations
+
+File: [Delete Operations/14-delete-operations.mongodb.js](./Delete%20Operations/14-delete-operations.mongodb.js)
+
+Learn to remove one matching document with `deleteOne()` or all matching documents with `deleteMany()`. Check the filter before deleting, especially when using `deleteMany()`.
+
+### 15. Indexes
+
+File: [Indexes/15-indexes.mongodb.js](./Indexes/15-indexes.mongodb.js)
+
+Learn how indexes can help queries find and sort documents, how to create and drop indexes, and how to enforce unique values. The lesson introduces single-field, compound, multikey, text, geospatial, partial, and TTL indexes, and uses `explain("executionStats")` to inspect query execution.
 
 ## Cheatsheet
 
@@ -204,6 +224,43 @@ db.videos.find({
   },
 })
 ```
+
+### Update documents and arrays
+
+```javascript
+db.products.updateOne(
+  { productId: "PRD-0001" },
+  { $push: { tags: "featured" } },
+)
+
+db.videos.updateOne(
+  { _id: ObjectId("6ade33dcde869742754aee74") },
+  { $inc: { "comments.$[].likes": 1 } },
+)
+```
+
+Use `$push` and `$each` to add array values, `$addToSet` to avoid duplicates, and `$pull`, `$pullAll`, or `$pop` to remove values. Positional `$[]` updates every array element; use `$[identifier]` with `arrayFilters` to target selected elements.
+
+### Delete documents
+
+```javascript
+db.products.deleteOne({ productId: "PRD-0001" })
+db.products.deleteMany({ isPublished: false, onDiscount: true })
+```
+
+`deleteOne()` removes one matching document; `deleteMany()` removes every match. Check the filter before running a delete.
+
+### Indexes
+
+```javascript
+db.products.createIndex({ category: 1 })
+db.products.createIndex({ productId: 1 }, { unique: true })
+db.products.find({ category: "Books" }).explain("executionStats")
+db.products.getIndexes()
+db.products.dropIndex("category_1")
+```
+
+Indexes can speed up queries and sorting, but require maintenance when documents change. MongoDB automatically indexes `_id`.
 
 ### Combine conditions
 
@@ -332,15 +389,15 @@ By working through the lessons, you will practice:
 - importing, exporting, filtering, and projecting documents
 - querying with comparison, logical, expression, and element operators
 - working with query cursors
-- updating documents with `updateOne()` and `updateMany()`
+- updating documents, nested fields, and arrays
+- deleting one or many matching documents
+- creating, inspecting, and removing indexes
 
 ## Notes
 
-This repository is intentionally beginner-friendly and focused on fundamental database operations. It currently includes the core read and update workflows and is a starting point for deeper topics such as:
+This repository is intentionally beginner-friendly and focused on fundamental database operations. It currently covers database basics, importing and exporting, reading, updating, deleting, and indexing. Deeper topics to explore include:
 
-- deleting documents
 - aggregation
-- indexing and performance
 - data modeling
 - MongoDB Atlas and production use cases
 
@@ -348,10 +405,10 @@ This repository is intentionally beginner-friendly and focused on fundamental da
 
 As you progress, explore:
 
-- delete operations
 - aggregation pipelines such as `$group`
-- indexes and query performance
 - relationships between documents and collections
+- schema validation and data modeling
+- MongoDB Atlas and production use cases
 
 ## License
 

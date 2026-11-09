@@ -18,7 +18,10 @@ Use the questions before the answer key for active recall. The examples follow t
 | Output | Projection | Choose which fields `find()` returns. | You want to include or exclude fields in the result. |
 | Nested data | Dot notation | Query fields inside embedded documents or array elements. | A field is nested, such as `stock.available` or `skills.language`. |
 | Arrays | `$all`, `$elemMatch` | Require multiple array values or conditions on one array element. | You are filtering tags or objects stored in an array. |
-| Update operations | `updateOne()`, `updateMany()`, `$set`, `$unset`, `$rename`, `$inc` | Change matching documents or add/remove fields. | You need to mutate one or many documents in place. |
+| Update operations | `updateOne()`, `updateMany()`, `$set`, `$unset`, `$rename`, `$inc` | Change matching documents or their fields. | You need to update one or many documents. |
+| Array updates | `$push`, `$each`, `$addToSet`, `$pull`, `$pullAll`, `$pop`, positional operators | Add, remove, or change array values. | You need to edit an array or selected array elements. |
+| Delete operations | `deleteOne()`, `deleteMany()` | Remove matching documents. | You need to delete one match or all matches. |
+| Indexes | `createIndex()`, `getIndexes()`, `dropIndex()`, `explain()` | Support queries and sorting, or enforce unique values. | You need to inspect query execution or manage indexes. |
 | Data tools | `mongoimport`, `mongoexport` | Import or export JSON and CSV data from a terminal. | You need to move collection data to or from files. |
 
 ## B. Topic-Wise Revision Notes
@@ -262,24 +265,66 @@ mongoimport --db shop --collection users --file ".\Importing and Exporting Data\
 **Active recall:** Which input file in this workspace needs `--jsonArray`? Do you run `mongoimport` inside `mongosh`?
 
 ### 13. Update operations
-**Core idea:** `updateOne()` changes the first matching document; `updateMany()` changes every matching document. Update operators such as `$set`, `$unset`, `$rename`, and `$inc` mutate fields without replacing the whole document.
+**Core idea:** `updateOne()` changes the first matching document; `updateMany()` changes every matching document. Operators can change fields or add, remove, and update array values without replacing the whole document.
 
-**When to use it:** Use update operations when you need to edit a field value, add a new field, remove a field, rename a field, or increment a numeric value on matching products.
+**When to use it:** Use update operations to change fields, nested values, or array elements in matching documents.
 
 **Basic syntax:**
 ```javascript
 db.products.updateOne({ productId: "PRD-0001" }, { $set: { price: 199 } });
 db.products.updateMany({ category: "Electronics" }, { $set: { isPublished: false } });
-db.products.updateMany({ featured: { $exists: true } }, { $unset: { featured: 1 } });
+db.products.updateOne({ productId: "PRD-0001" }, { $push: { tags: "featured" } });
+db.videos.updateOne({ _id: ObjectId("6ade33dcde869742754aee75") }, { $inc: { "comments.$[].likes": 1 } });
 ```
 
-**Example from my practice:** The current progress item in the repo is `Update Operations/12-update-operations.mongodb.js`, which covers nested updates, `$inc`, `$rename`, and matching filters.
+**Example from my practice:** `12-update-operations.mongodb.js` covers field and nested updates, `$inc`, and `$rename`. `13-updating-arrays-and-embedded-documents.mongodb.js` covers `$push`, `$each`, `$addToSet`, `$pull`, `$pullAll`, `$pop`, positional `$`, `$[]`, `$[identifier]`, `arrayFilters`, and dot notation with `$set` and `$inc`.
 
-**Common mistake:** `updateOne()` updates only the first match; it is not a global update. `$rename` changes the field name but keeps its value, while `$unset` removes the field entirely.
+**Common mistake:** `updateOne()` changes only one matching document. `$push` can add duplicates; use `$addToSet` when a value should be added only if it is not already present. The positional `$` updates the first array element matched by the query; `$[]` updates every element, while `$[identifier]` updates elements matched by `arrayFilters`.
 
-**Related concepts:** `$set` creates a field when missing. `$inc` increments an existing numeric field; `$rename` and `$unset` are useful when cleaning up document structure.
+**Related concepts:** `$set` creates a field when missing; `$unset` removes a field; `$rename` changes its name; and `$inc` changes a numeric value. `$pull` removes matching array values, `$pullAll` removes listed values, and `$pop` removes the first (`-1`) or last (`1`) array value.
 
-**Active recall:** Which operator adds a new field if it does not already exist? If you want to remove a field without deleting the document, which operator do you use?
+**Active recall:** Which operator adds a field if it does not exist? Which array operator avoids adding a duplicate value? How do `$[]` and `$[identifier]` differ?
+
+### 14. Delete operations
+**Core idea:** `deleteOne()` removes one matching document; `deleteMany()` removes every matching document.
+
+**When to use it:** Use these methods when documents should be permanently removed from a collection.
+
+**Basic syntax:**
+```javascript
+db.products.deleteOne({ _id: ObjectId("6ae39e9886aeacb8c7e34843") });
+db.products.deleteMany({ isPublished: false, onDiscount: true });
+```
+
+**Example from my practice:** `Delete Operations/14-delete-operations.mongodb.js` checks matching products before deleting one document or all products that are unpublished and discounted.
+
+**Common mistake:** A broad filter can remove more documents than intended. Check the filter first; an empty filter to `deleteMany()` matches every document in the collection.
+
+**Related concepts:** `deleteOne()` removes at most one matching document; `deleteMany()` removes all matches. These operations delete documents, not the collection itself.
+
+**Active recall:** Which method removes all documents matching a filter? What should you check before running it?
+
+### 15. Indexes
+**Core idea:** Indexes help MongoDB find and sort documents faster. They can also enforce unique values, but they take storage and need updating when documents change.
+
+**When to use it:** Create indexes on fields used by queries or sorting, and use a unique index when a field must not contain duplicate values.
+
+**Basic syntax:**
+```javascript
+db.products.createIndex({ category: 1 });
+db.products.createIndex({ productId: 1 }, { unique: true });
+db.products.find({ category: "Books" }).explain("executionStats");
+db.products.getIndexes();
+db.products.dropIndex("category_1");
+```
+
+**Example from my practice:** `Indexes/15-indexes.mongodb.js` compares query execution before and after creating an index, inspects and drops indexes, and demonstrates a unique index. It introduces single-field, compound, multikey, text, geospatial, partial, and TTL indexes.
+
+**Common mistake:** Indexes have a cost: they use storage and can slow writes because MongoDB must maintain them. A unique index also prevents inserting duplicate values for its indexed key.
+
+**Related concepts:** MongoDB automatically indexes `_id`. Use `1` for ascending and `-1` for descending index order. `explain("executionStats")` shows how a query ran; `getIndexes()` lists indexes, and `dropIndex()` removes one.
+
+**Active recall:** Which index option prevents duplicate values? Which command can show whether a query used an index? Name one reason not to index every field.
 
 ## C. Important Differences Between Similar Concepts
 
@@ -328,6 +373,10 @@ The practice files do not provide enough evidence to identify recurring personal
 | Treating `$and` as array-element binding | `$and` combines document-level predicates only. | `$and` is not a replacement for `$elemMatch`. |
 | Mixing inclusion and exclusion in a projection | Inclusion and exclusion cannot be mixed, except for `_id`. | Choose one projection style. |
 | Importing a JSON array like NDJSON | JSON arrays need `--jsonArray`; NDJSON is one document per line. | Check the file shape before importing. |
+| Assuming `$push` avoids duplicates | `$push` adds a value even if it is already present. | Use `$addToSet` to avoid adding a duplicate value. |
+| Using an overly broad delete filter | `deleteMany()` removes every matching document. | Check the filter before deleting. |
+| Adding indexes to every field | Indexes use storage and add work to writes. | Index fields that support real query or sorting needs. |
+| Expecting a unique index to accept duplicates | A unique index rejects duplicate indexed values. | Check existing data before creating a unique index. |
 
 ## E. Active Recall Practice
 
@@ -343,6 +392,9 @@ Try each question before opening the answer key.
 8. **Write a query:** Return only `name` and `brand` from `products`, and do not return `_id`.
 9. **Combine concepts:** Find videos that have all three tags `"mongodb"`, `"backend"`, and `"database"`, have `video.quality` equal to `"1080p"`, and have one comment from user id `103` that is pinned and has at least 20 likes.
 10. **Choose an import option:** Which import file in this workspace requires `--jsonArray`, `users_array.json` or `products_ndjson.json`?
+11. **Choose an update operator:** Which operator adds an array value only if it is not already present?
+12. **Choose a delete method:** Which method removes every document that matches a filter?
+13. **Understand indexes:** Which index option prevents duplicate values, and which command can show query execution statistics?
 
 ### Answer key
 
@@ -381,6 +433,9 @@ Try each question before opening the answer key.
    });
    ```
 10. `users_array.json` needs `--jsonArray`; `products_ndjson.json` is newline-delimited JSON and does not.
+11. Use `$addToSet`, for example: `db.videos.updateOne({ _id: ObjectId("6ade33dcde869742754aee74") }, { $addToSet: { tags: "mongodb" } })`.
+12. Use `deleteMany(filter)`. Check the filter first because every matching document will be deleted.
+13. Create a unique index with `{ unique: true }`; use `.explain("executionStats")` on a query to inspect its execution.
 
 ## F. Quick Syntax Reference
 
@@ -409,6 +464,22 @@ db.products.find({}, { name: 1, brand: 1, _id: 0 });
 
 // Order and limit results
 db.products.find({}).sort({ price: 1 }).skip(10).limit(10);
+
+// Update fields and arrays
+db.products.updateOne({ productId: "PRD-0001" }, { $set: { price: 199 } });
+db.products.updateOne({ productId: "PRD-0001" }, { $addToSet: { tags: "featured" } });
+db.videos.updateOne({ _id: ObjectId("6ade33dcde869742754aee75") }, { $inc: { "comments.$[].likes": 1 } });
+
+// Delete matching documents
+db.products.deleteOne({ productId: "PRD-0001" });
+db.products.deleteMany({ isPublished: false, onDiscount: true });
+
+// Create, inspect, and remove indexes
+db.products.createIndex({ category: 1 });
+db.products.createIndex({ productId: 1 }, { unique: true });
+db.products.find({ category: "Books" }).explain("executionStats");
+db.products.getIndexes();
+db.products.dropIndex("category_1");
 ```
 
 Run data-tool commands in a terminal:
